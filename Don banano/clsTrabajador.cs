@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Don_banano
 {
-    internal class clsTrabajador
+    public class clsTrabajador : clsPersona
     {
+        public clsTrabajador(string nombre, string documento) : base(nombre, documento) { }
+
+        public virtual void MostrarInventario(clsSucursal sucursal)
+        {
+            sucursal.ObtenerInventario();
+        }
     }
 }

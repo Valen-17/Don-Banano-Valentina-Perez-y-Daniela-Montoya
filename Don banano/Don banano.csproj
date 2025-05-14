@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsAdmin.cs" />
+    <Compile Include="clsPersona.cs" />
+    <Compile Include="clsProducto.cs" />
+    <Compile Include="clsTrabajador.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
