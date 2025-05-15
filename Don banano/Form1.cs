@@ -19,8 +19,14 @@ namespace Don_banano
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            int prueba = 0;
+
         }
 
+        private void btn_registrar_Click(object sender, EventArgs e)
+        {
+            panel_registrarse.Visible = true;
+            panel_registrarse.BringToFront();
+            panel_registrarse.Location = new Point(385, 337);
+        }
     }
 }
