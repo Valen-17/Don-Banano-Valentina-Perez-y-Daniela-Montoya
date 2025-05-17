@@ -38,7 +38,6 @@
             this.txt_user = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_repartidor = new Guna.UI2.WinForms.Guna2Button();
             this.btn_cliente = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_vendedor = new Guna.UI2.WinForms.Guna2Button();
             this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_register = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
@@ -120,7 +119,6 @@
             this.panel_registrarse.Controls.Add(this.txt_user);
             this.panel_registrarse.Controls.Add(this.btn_repartidor);
             this.panel_registrarse.Controls.Add(this.btn_cliente);
-            this.panel_registrarse.Controls.Add(this.btn_vendedor);
             this.panel_registrarse.Controls.Add(this.txt_password);
             this.panel_registrarse.Controls.Add(this.btn_register);
             this.panel_registrarse.Controls.Add(this.guna2Shapes2);
@@ -129,8 +127,7 @@
             this.panel_registrarse.Controls.Add(this.guna2Shapes1);
             this.panel_registrarse.Controls.Add(this.guna2Shapes3);
             this.panel_registrarse.Controls.Add(this.guna2PictureBox1);
-            this.panel_registrarse.Location = new System.Drawing.Point(20, 31);
-            this.panel_registrarse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+
             this.panel_registrarse.Name = "panel_registrarse";
             this.panel_registrarse.Size = new System.Drawing.Size(642, 694);
             this.panel_registrarse.TabIndex = 5;
@@ -148,10 +145,6 @@
             this.btn_cerrarR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
             this.btn_cerrarR.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_cerrarR.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrarR.Location = new System.Drawing.Point(594, 2);
-            this.btn_cerrarR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_cerrarR.Name = "btn_cerrarR";
-            this.btn_cerrarR.Size = new System.Drawing.Size(46, 41);
             this.btn_cerrarR.TabIndex = 17;
             this.btn_cerrarR.Text = "X";
             this.btn_cerrarR.UseTransparentBackground = true;
@@ -221,8 +214,7 @@
             this.btn_repartidor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(77)))), ((int)(((byte)(100)))));
             this.btn_repartidor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_repartidor.ForeColor = System.Drawing.Color.White;
-            this.btn_repartidor.Location = new System.Drawing.Point(432, 288);
-            this.btn_repartidor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+
             this.btn_repartidor.Name = "btn_repartidor";
             this.btn_repartidor.Size = new System.Drawing.Size(166, 56);
             this.btn_repartidor.TabIndex = 13;
@@ -243,8 +235,7 @@
             this.btn_cliente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
             this.btn_cliente.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_cliente.ForeColor = System.Drawing.Color.White;
-            this.btn_cliente.Location = new System.Drawing.Point(238, 288);
-            this.btn_cliente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+
             this.btn_cliente.Name = "btn_cliente";
             this.btn_cliente.Size = new System.Drawing.Size(166, 56);
             this.btn_cliente.TabIndex = 12;
@@ -252,28 +243,7 @@
             this.btn_cliente.UseTransparentBackground = true;
             this.btn_cliente.Click += new System.EventHandler(this.btn_cliente_Click);
             // 
-            // btn_vendedor
-            // 
-            this.btn_vendedor.BackColor = System.Drawing.Color.Transparent;
-            this.btn_vendedor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
-            this.btn_vendedor.BorderRadius = 15;
-            this.btn_vendedor.BorderThickness = 2;
-            this.btn_vendedor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_vendedor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_vendedor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_vendedor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_vendedor.FillColor = System.Drawing.Color.DarkGoldenrod;
-            this.btn_vendedor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_vendedor.ForeColor = System.Drawing.Color.White;
-            this.btn_vendedor.Location = new System.Drawing.Point(38, 288);
-            this.btn_vendedor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_vendedor.Name = "btn_vendedor";
-            this.btn_vendedor.Size = new System.Drawing.Size(166, 56);
-            this.btn_vendedor.TabIndex = 11;
-            this.btn_vendedor.Text = "Vendedor";
-            this.btn_vendedor.UseTransparentBackground = true;
-            this.btn_vendedor.Click += new System.EventHandler(this.btn_vendedor_Click);
-            // 
+
             // txt_password
             // 
             this.txt_password.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(204)))), ((int)(((byte)(123)))));
@@ -390,13 +360,13 @@
             this.guna2Shapes3.BorderColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes3.FillColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes3.Location = new System.Drawing.Point(0, 2);
-            this.guna2Shapes3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+
             this.guna2Shapes3.Name = "guna2Shapes3";
             this.guna2Shapes3.PolygonSkip = 1;
             this.guna2Shapes3.Rotate = 0F;
             this.guna2Shapes3.RoundedRadius = 30;
             this.guna2Shapes3.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes3.Size = new System.Drawing.Size(642, 41);
+
             this.guna2Shapes3.TabIndex = 18;
             this.guna2Shapes3.Text = "guna2Shapes3";
             this.guna2Shapes3.UseTransparentBackground = true;
@@ -419,6 +389,8 @@
             // panel_iniciar
             // 
             this.panel_iniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
+            this.panel_iniciar.Controls.Add(this.guna2Button1);
+            this.panel_iniciar.Controls.Add(this.guna2Shapes5);
             this.panel_iniciar.Controls.Add(this.txt_contraseña);
             this.panel_iniciar.Controls.Add(this.txt_usuario);
             this.panel_iniciar.Controls.Add(this.btn_login);
@@ -426,8 +398,7 @@
             this.panel_iniciar.Controls.Add(this.guna2PictureBox5);
             this.panel_iniciar.Controls.Add(this.guna2Shapes4);
             this.panel_iniciar.Controls.Add(this.guna2PictureBox6);
-            this.panel_iniciar.Location = new System.Drawing.Point(690, 31);
-            this.panel_iniciar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+
             this.panel_iniciar.Name = "panel_iniciar";
             this.panel_iniciar.Size = new System.Drawing.Size(642, 694);
             this.panel_iniciar.TabIndex = 6;
@@ -501,6 +472,7 @@
             this.btn_login.Size = new System.Drawing.Size(294, 76);
             this.btn_login.TabIndex = 8;
             this.btn_login.Text = "Iniciar sesión";
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -508,10 +480,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(184, 238);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(264, 58);
+
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Iniciar sesión";
             // 
@@ -582,6 +551,7 @@
             this.btn_ingresar.TabIndex = 4;
             this.btn_ingresar.Text = "Ingresar";
             this.btn_ingresar.UseTransparentBackground = true;
+            this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
             // 
             // btn_registrar
             // 
@@ -605,6 +575,7 @@
             this.btn_registrar.UseTransparentBackground = true;
             this.btn_registrar.Click += new System.EventHandler(this.btn_registrar_Click);
             // 
+
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -646,7 +617,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_password;
         private Guna.UI2.WinForms.Guna2Button btn_repartidor;
         private Guna.UI2.WinForms.Guna2Button btn_cliente;
-        private Guna.UI2.WinForms.Guna2Button btn_vendedor;
         private Guna.UI2.WinForms.Guna2Panel panel_iniciar;
         private Guna.UI2.WinForms.Guna2TextBox txt_contraseña;
         private Guna.UI2.WinForms.Guna2TextBox txt_usuario;
@@ -659,6 +629,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_user;
         private Guna.UI2.WinForms.Guna2Button btn_cerrarR;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes5;
     }
 }
 
