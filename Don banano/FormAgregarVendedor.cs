@@ -33,6 +33,13 @@ namespace Don_banano
             }
         }
 
+        //Panel agregar
+        private void btn_cerrarA_Click(object sender, EventArgs e)
+        {
+            panel_agregar.Visible = false;
+            panel_agregar.SendToBack();
+        }
+
         private void btn_agregar_Click(object sender, EventArgs e)
         {
             int x = (this.ClientSize.Width - panel_agregar.Width) / 2;
@@ -55,6 +62,7 @@ namespace Don_banano
             }
 
             Form1 formPrincipal = Application.OpenForms["Form1"] as Form1;
+
             if (formPrincipal != null)
             {
                 var lista = formPrincipal.ObtenerUsuarios();
@@ -74,6 +82,13 @@ namespace Don_banano
 
                 CargarVendedores();
             }
+        }
+
+        private void btn_volver_Click(object sender, EventArgs e)
+        {
+            FormAdmin formAdmin = new FormAdmin();
+            formAdmin.Show();
+            this.Hide();
         }
     }
 }

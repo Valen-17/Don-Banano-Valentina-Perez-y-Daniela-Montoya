@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btn_vendedores = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.listView_ventas = new System.Windows.Forms.ListView();
@@ -54,8 +56,6 @@
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_vendedores = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -95,6 +95,42 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(753, 629);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(54, 54);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(184, 319);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(78, 68);
+            this.guna2ImageButton2.TabIndex = 44;
+            this.guna2ImageButton2.UseTransparentBackground = true;
+            // 
+            // btn_vendedores
+            // 
+            this.btn_vendedores.BackColor = System.Drawing.Color.Transparent;
+            this.btn_vendedores.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
+            this.btn_vendedores.BorderRadius = 15;
+            this.btn_vendedores.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_vendedores.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_vendedores.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_vendedores.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_vendedores.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(77)))), ((int)(((byte)(100)))));
+            this.btn_vendedores.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_vendedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
+            this.btn_vendedores.Location = new System.Drawing.Point(268, 324);
+            this.btn_vendedores.Name = "btn_vendedores";
+            this.btn_vendedores.Size = new System.Drawing.Size(266, 53);
+            this.btn_vendedores.TabIndex = 43;
+            this.btn_vendedores.Text = "Vendedores";
+            this.btn_vendedores.UseTransparentBackground = true;
+            this.btn_vendedores.Click += new System.EventHandler(this.btn_vendedores_Click);
             // 
             // guna2Panel2
             // 
@@ -295,12 +331,13 @@
             this.btn_volver.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.btn_volver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_volver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.btn_volver.Location = new System.Drawing.Point(246, 493);
+            this.btn_volver.Location = new System.Drawing.Point(268, 493);
             this.btn_volver.Name = "btn_volver";
-            this.btn_volver.Size = new System.Drawing.Size(266, 62);
+            this.btn_volver.Size = new System.Drawing.Size(244, 56);
             this.btn_volver.TabIndex = 25;
             this.btn_volver.Text = "Cerrar";
             this.btn_volver.UseTransparentBackground = true;
+            this.btn_volver.Click += new System.EventHandler(this.btn_volver_Click);
             // 
             // btn_ventas
             // 
@@ -411,42 +448,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 51);
             this.label2.TabIndex = 18;
-            // 
-            // btn_vendedores
-            // 
-            this.btn_vendedores.BackColor = System.Drawing.Color.Transparent;
-            this.btn_vendedores.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.btn_vendedores.BorderRadius = 15;
-            this.btn_vendedores.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_vendedores.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_vendedores.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_vendedores.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_vendedores.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(77)))), ((int)(((byte)(100)))));
-            this.btn_vendedores.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_vendedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.btn_vendedores.Location = new System.Drawing.Point(268, 324);
-            this.btn_vendedores.Name = "btn_vendedores";
-            this.btn_vendedores.Size = new System.Drawing.Size(266, 53);
-            this.btn_vendedores.TabIndex = 43;
-            this.btn_vendedores.Text = "Vendedores";
-            this.btn_vendedores.UseTransparentBackground = true;
-            this.btn_vendedores.Click += new System.EventHandler(this.btn_vendedores_Click);
-            // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
-            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton2.ImageRotate = 0F;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(54, 54);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(184, 319);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(78, 68);
-            this.guna2ImageButton2.TabIndex = 44;
-            this.guna2ImageButton2.UseTransparentBackground = true;
             // 
             // FormAdmin
             // 
