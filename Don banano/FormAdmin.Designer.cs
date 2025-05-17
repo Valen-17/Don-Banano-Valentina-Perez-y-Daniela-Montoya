@@ -32,6 +32,14 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.listView_ventas = new System.Windows.Forms.ListView();
+            this.Producto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Precio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Cantidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.guna2Shapes8 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
@@ -46,18 +54,12 @@
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2Shapes8 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.listView_ventas = new System.Windows.Forms.ListView();
-            this.Producto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Precio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Cantidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btn_vendedores = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -76,6 +78,8 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
+            this.guna2Panel1.Controls.Add(this.guna2ImageButton2);
+            this.guna2Panel1.Controls.Add(this.btn_vendedores);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
@@ -105,10 +109,100 @@
             this.guna2Panel2.Controls.Add(this.guna2Shapes4);
             this.guna2Panel2.Controls.Add(this.guna2Shapes5);
             this.guna2Panel2.Controls.Add(this.label1);
-            this.guna2Panel2.Location = new System.Drawing.Point(712, 45);
+            this.guna2Panel2.Location = new System.Drawing.Point(711, 22);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(729, 604);
             this.guna2Panel2.TabIndex = 42;
+            this.guna2Panel2.Visible = false;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(451, 53);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(173, 153);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 52;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
+            // listView_ventas
+            // 
+            this.listView_ventas.BackColor = System.Drawing.Color.LemonChiffon;
+            this.listView_ventas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Producto,
+            this.Precio,
+            this.Cantidad});
+            this.listView_ventas.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView_ventas.HideSelection = false;
+            this.listView_ventas.Location = new System.Drawing.Point(191, 212);
+            this.listView_ventas.Name = "listView_ventas";
+            this.listView_ventas.Size = new System.Drawing.Size(328, 289);
+            this.listView_ventas.TabIndex = 51;
+            this.listView_ventas.UseCompatibleStateImageBehavior = false;
+            this.listView_ventas.View = System.Windows.Forms.View.Details;
+            // 
+            // Producto
+            // 
+            this.Producto.Text = "Producto";
+            this.Producto.Width = 150;
+            // 
+            // Precio
+            // 
+            this.Precio.Text = "Precio";
+            this.Precio.Width = 80;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.Text = "Cantidad";
+            this.Cantidad.Width = 90;
+            // 
+            // guna2Shapes8
+            // 
+            this.guna2Shapes8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(43)))), ((int)(((byte)(1)))));
+            this.guna2Shapes8.BorderThickness = 0;
+            this.guna2Shapes8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(190)))), ((int)(((byte)(44)))));
+            this.guna2Shapes8.Location = new System.Drawing.Point(111, 494);
+            this.guna2Shapes8.Name = "guna2Shapes8";
+            this.guna2Shapes8.PolygonSkip = 1;
+            this.guna2Shapes8.Rotate = 0F;
+            this.guna2Shapes8.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+            this.guna2Shapes8.Size = new System.Drawing.Size(506, 69);
+            this.guna2Shapes8.TabIndex = 50;
+            this.guna2Shapes8.Text = "guna2Shapes8";
+            this.guna2Shapes8.Zoom = 100;
+            // 
+            // guna2Shapes7
+            // 
+            this.guna2Shapes7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(43)))), ((int)(((byte)(1)))));
+            this.guna2Shapes7.BorderThickness = 0;
+            this.guna2Shapes7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(190)))), ((int)(((byte)(44)))));
+            this.guna2Shapes7.Location = new System.Drawing.Point(111, 353);
+            this.guna2Shapes7.Name = "guna2Shapes7";
+            this.guna2Shapes7.PolygonSkip = 1;
+            this.guna2Shapes7.Rotate = 0F;
+            this.guna2Shapes7.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+            this.guna2Shapes7.Size = new System.Drawing.Size(506, 69);
+            this.guna2Shapes7.TabIndex = 49;
+            this.guna2Shapes7.Text = "guna2Shapes7";
+            this.guna2Shapes7.Zoom = 100;
+            // 
+            // guna2Shapes6
+            // 
+            this.guna2Shapes6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(43)))), ((int)(((byte)(1)))));
+            this.guna2Shapes6.BorderThickness = 0;
+            this.guna2Shapes6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(190)))), ((int)(((byte)(44)))));
+            this.guna2Shapes6.Location = new System.Drawing.Point(111, 212);
+            this.guna2Shapes6.Name = "guna2Shapes6";
+            this.guna2Shapes6.PolygonSkip = 1;
+            this.guna2Shapes6.Rotate = 0F;
+            this.guna2Shapes6.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+            this.guna2Shapes6.Size = new System.Drawing.Size(506, 69);
+            this.guna2Shapes6.TabIndex = 48;
+            this.guna2Shapes6.Text = "guna2Shapes6";
+            this.guna2Shapes6.Zoom = 100;
             // 
             // guna2HtmlLabel3
             // 
@@ -181,9 +275,9 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(212)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(263, 88);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(205, 75);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(248, 92);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(349, 125);
             this.guna2HtmlLabel2.TabIndex = 26;
             this.guna2HtmlLabel2.Text = "Administrador";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -201,7 +295,7 @@
             this.btn_volver.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.btn_volver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_volver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.btn_volver.Location = new System.Drawing.Point(245, 474);
+            this.btn_volver.Location = new System.Drawing.Point(246, 493);
             this.btn_volver.Name = "btn_volver";
             this.btn_volver.Size = new System.Drawing.Size(266, 62);
             this.btn_volver.TabIndex = 25;
@@ -220,7 +314,7 @@
             this.btn_ventas.FillColor = System.Drawing.Color.OliveDrab;
             this.btn_ventas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_ventas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.btn_ventas.Location = new System.Drawing.Point(268, 364);
+            this.btn_ventas.Location = new System.Drawing.Point(268, 398);
             this.btn_ventas.Name = "btn_ventas";
             this.btn_ventas.Size = new System.Drawing.Size(266, 53);
             this.btn_ventas.TabIndex = 24;
@@ -235,10 +329,11 @@
             this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
             this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton3.ImageRotate = 0F;
-            this.guna2ImageButton3.Location = new System.Drawing.Point(175, 350);
+            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(54, 54);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(184, 383);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.Size = new System.Drawing.Size(87, 84);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(78, 68);
             this.guna2ImageButton3.TabIndex = 23;
             this.guna2ImageButton3.UseTransparentBackground = true;
             // 
@@ -250,11 +345,11 @@
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(100, 100);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(175, 234);
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(80, 80);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(194, 253);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(87, 84);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(59, 60);
             this.guna2ImageButton1.TabIndex = 22;
             this.guna2ImageButton1.UseTransparentBackground = true;
             // 
@@ -317,94 +412,41 @@
             this.label2.Size = new System.Drawing.Size(0, 51);
             this.label2.TabIndex = 18;
             // 
-            // guna2Shapes6
+            // btn_vendedores
             // 
-            this.guna2Shapes6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(43)))), ((int)(((byte)(1)))));
-            this.guna2Shapes6.BorderThickness = 0;
-            this.guna2Shapes6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(190)))), ((int)(((byte)(44)))));
-            this.guna2Shapes6.Location = new System.Drawing.Point(111, 212);
-            this.guna2Shapes6.Name = "guna2Shapes6";
-            this.guna2Shapes6.PolygonSkip = 1;
-            this.guna2Shapes6.Rotate = 0F;
-            this.guna2Shapes6.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes6.Size = new System.Drawing.Size(506, 69);
-            this.guna2Shapes6.TabIndex = 48;
-            this.guna2Shapes6.Text = "guna2Shapes6";
-            this.guna2Shapes6.Zoom = 100;
+            this.btn_vendedores.BackColor = System.Drawing.Color.Transparent;
+            this.btn_vendedores.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
+            this.btn_vendedores.BorderRadius = 15;
+            this.btn_vendedores.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_vendedores.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_vendedores.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_vendedores.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_vendedores.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(77)))), ((int)(((byte)(100)))));
+            this.btn_vendedores.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_vendedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
+            this.btn_vendedores.Location = new System.Drawing.Point(268, 324);
+            this.btn_vendedores.Name = "btn_vendedores";
+            this.btn_vendedores.Size = new System.Drawing.Size(266, 53);
+            this.btn_vendedores.TabIndex = 43;
+            this.btn_vendedores.Text = "Vendedores";
+            this.btn_vendedores.UseTransparentBackground = true;
+            this.btn_vendedores.Click += new System.EventHandler(this.btn_vendedores_Click);
             // 
-            // guna2Shapes7
+            // guna2ImageButton2
             // 
-            this.guna2Shapes7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(43)))), ((int)(((byte)(1)))));
-            this.guna2Shapes7.BorderThickness = 0;
-            this.guna2Shapes7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(190)))), ((int)(((byte)(44)))));
-            this.guna2Shapes7.Location = new System.Drawing.Point(111, 353);
-            this.guna2Shapes7.Name = "guna2Shapes7";
-            this.guna2Shapes7.PolygonSkip = 1;
-            this.guna2Shapes7.Rotate = 0F;
-            this.guna2Shapes7.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes7.Size = new System.Drawing.Size(506, 69);
-            this.guna2Shapes7.TabIndex = 49;
-            this.guna2Shapes7.Text = "guna2Shapes7";
-            this.guna2Shapes7.Zoom = 100;
-            // 
-            // guna2Shapes8
-            // 
-            this.guna2Shapes8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(43)))), ((int)(((byte)(1)))));
-            this.guna2Shapes8.BorderThickness = 0;
-            this.guna2Shapes8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(190)))), ((int)(((byte)(44)))));
-            this.guna2Shapes8.Location = new System.Drawing.Point(111, 494);
-            this.guna2Shapes8.Name = "guna2Shapes8";
-            this.guna2Shapes8.PolygonSkip = 1;
-            this.guna2Shapes8.Rotate = 0F;
-            this.guna2Shapes8.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes8.Size = new System.Drawing.Size(506, 69);
-            this.guna2Shapes8.TabIndex = 50;
-            this.guna2Shapes8.Text = "guna2Shapes8";
-            this.guna2Shapes8.Zoom = 100;
-            // 
-            // listView_ventas
-            // 
-            this.listView_ventas.BackColor = System.Drawing.Color.LemonChiffon;
-            this.listView_ventas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Producto,
-            this.Precio,
-            this.Cantidad});
-            this.listView_ventas.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView_ventas.HideSelection = false;
-            this.listView_ventas.Location = new System.Drawing.Point(191, 212);
-            this.listView_ventas.Name = "listView_ventas";
-            this.listView_ventas.Size = new System.Drawing.Size(328, 289);
-            this.listView_ventas.TabIndex = 51;
-            this.listView_ventas.UseCompatibleStateImageBehavior = false;
-            this.listView_ventas.View = System.Windows.Forms.View.Details;
-            // 
-            // Producto
-            // 
-            this.Producto.Text = "Producto";
-            this.Producto.Width = 150;
-            // 
-            // Precio
-            // 
-            this.Precio.Text = "Precio";
-            this.Precio.Width = 80;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.Text = "Cantidad";
-            this.Cantidad.Width = 90;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(451, 53);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(173, 153);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 52;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
+            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(54, 54);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(184, 319);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(78, 68);
+            this.guna2ImageButton2.TabIndex = 44;
+            this.guna2ImageButton2.UseTransparentBackground = true;
             // 
             // FormAdmin
             // 
@@ -413,13 +455,14 @@
             this.ClientSize = new System.Drawing.Size(753, 628);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "FormAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAdmin";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -450,5 +493,7 @@
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes8;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes7;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
+        private Guna.UI2.WinForms.Guna2Button btn_vendedores;
     }
 }
