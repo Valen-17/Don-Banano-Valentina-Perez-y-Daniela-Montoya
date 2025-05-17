@@ -47,6 +47,7 @@
             this.guna2Shapes3 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel_iniciar = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_contraseña = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_usuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_login = new Guna.UI2.WinForms.Guna2Button();
@@ -56,6 +57,8 @@
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btn_ingresar = new Guna.UI2.WinForms.Guna2Button();
             this.btn_registrar = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Shapes8 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.btn_cerrarI = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -72,10 +75,9 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(102, -86);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(91, -69);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(716, 425);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(636, 340);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
@@ -86,10 +88,9 @@
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(269, 204);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(239, 163);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(279, 235);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(248, 188);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox3.TabIndex = 2;
             this.guna2PictureBox3.TabStop = false;
@@ -105,10 +106,9 @@
             this.guna2Panel1.Controls.Add(this.btn_registrar);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox3);
-            this.guna2Panel1.Location = new System.Drawing.Point(-7, -2);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel1.Location = new System.Drawing.Point(-6, -2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(860, 789);
+            this.guna2Panel1.Size = new System.Drawing.Size(764, 631);
             this.guna2Panel1.TabIndex = 3;
             // 
             // panel_registrarse
@@ -127,9 +127,10 @@
             this.panel_registrarse.Controls.Add(this.guna2Shapes1);
             this.panel_registrarse.Controls.Add(this.guna2Shapes3);
             this.panel_registrarse.Controls.Add(this.guna2PictureBox1);
-
+            this.panel_registrarse.Location = new System.Drawing.Point(641, 38);
+            this.panel_registrarse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_registrarse.Name = "panel_registrarse";
-            this.panel_registrarse.Size = new System.Drawing.Size(642, 694);
+            this.panel_registrarse.Size = new System.Drawing.Size(571, 555);
             this.panel_registrarse.TabIndex = 5;
             this.panel_registrarse.Visible = false;
             // 
@@ -145,6 +146,10 @@
             this.btn_cerrarR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
             this.btn_cerrarR.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_cerrarR.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrarR.Location = new System.Drawing.Point(526, -1);
+            this.btn_cerrarR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cerrarR.Name = "btn_cerrarR";
+            this.btn_cerrarR.Size = new System.Drawing.Size(45, 36);
             this.btn_cerrarR.TabIndex = 17;
             this.btn_cerrarR.Text = "X";
             this.btn_cerrarR.UseTransparentBackground = true;
@@ -166,14 +171,14 @@
             this.txt_confirmar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_confirmar.ForeColor = System.Drawing.Color.Black;
             this.txt_confirmar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_confirmar.Location = new System.Drawing.Point(104, 529);
-            this.txt_confirmar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_confirmar.Location = new System.Drawing.Point(92, 423);
+            this.txt_confirmar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_confirmar.Name = "txt_confirmar";
             this.txt_confirmar.PasswordChar = '*';
             this.txt_confirmar.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_confirmar.PlaceholderText = "Confirmar Contraseña*";
             this.txt_confirmar.SelectedText = "";
-            this.txt_confirmar.Size = new System.Drawing.Size(431, 62);
+            this.txt_confirmar.Size = new System.Drawing.Size(383, 50);
             this.txt_confirmar.TabIndex = 16;
             // 
             // txt_user
@@ -192,13 +197,13 @@
             this.txt_user.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_user.ForeColor = System.Drawing.Color.Black;
             this.txt_user.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_user.Location = new System.Drawing.Point(104, 370);
-            this.txt_user.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_user.Location = new System.Drawing.Point(92, 296);
+            this.txt_user.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_user.Name = "txt_user";
             this.txt_user.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_user.PlaceholderText = "Usuario";
             this.txt_user.SelectedText = "";
-            this.txt_user.Size = new System.Drawing.Size(431, 62);
+            this.txt_user.Size = new System.Drawing.Size(383, 50);
             this.txt_user.TabIndex = 15;
             // 
             // btn_repartidor
@@ -214,9 +219,10 @@
             this.btn_repartidor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(77)))), ((int)(((byte)(100)))));
             this.btn_repartidor.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_repartidor.ForeColor = System.Drawing.Color.White;
-
+            this.btn_repartidor.Location = new System.Drawing.Point(307, 232);
+            this.btn_repartidor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_repartidor.Name = "btn_repartidor";
-            this.btn_repartidor.Size = new System.Drawing.Size(166, 56);
+            this.btn_repartidor.Size = new System.Drawing.Size(148, 45);
             this.btn_repartidor.TabIndex = 13;
             this.btn_repartidor.Text = "Repartidor";
             this.btn_repartidor.UseTransparentBackground = true;
@@ -235,15 +241,15 @@
             this.btn_cliente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
             this.btn_cliente.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_cliente.ForeColor = System.Drawing.Color.White;
-
+            this.btn_cliente.Location = new System.Drawing.Point(117, 232);
+            this.btn_cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_cliente.Name = "btn_cliente";
-            this.btn_cliente.Size = new System.Drawing.Size(166, 56);
+            this.btn_cliente.Size = new System.Drawing.Size(148, 45);
             this.btn_cliente.TabIndex = 12;
             this.btn_cliente.Text = "Cliente";
             this.btn_cliente.UseTransparentBackground = true;
             this.btn_cliente.Click += new System.EventHandler(this.btn_cliente_Click);
             // 
-
             // txt_password
             // 
             this.txt_password.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(204)))), ((int)(((byte)(123)))));
@@ -260,14 +266,14 @@
             this.txt_password.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_password.ForeColor = System.Drawing.Color.Black;
             this.txt_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_password.Location = new System.Drawing.Point(104, 449);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_password.Location = new System.Drawing.Point(92, 359);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_password.PlaceholderText = "Contraseña";
             this.txt_password.SelectedText = "";
-            this.txt_password.Size = new System.Drawing.Size(431, 62);
+            this.txt_password.Size = new System.Drawing.Size(383, 50);
             this.txt_password.TabIndex = 9;
             this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
@@ -282,10 +288,9 @@
             this.btn_register.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btn_register.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_register.ForeColor = System.Drawing.Color.Black;
-            this.btn_register.Location = new System.Drawing.Point(184, 611);
-            this.btn_register.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_register.Location = new System.Drawing.Point(164, 489);
             this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(279, 68);
+            this.btn_register.Size = new System.Drawing.Size(248, 54);
             this.btn_register.TabIndex = 8;
             this.btn_register.Text = "Registrarse";
             this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
@@ -295,14 +300,13 @@
             this.guna2Shapes2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Shapes2.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Shapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(157)))), ((int)(((byte)(1)))));
-            this.guna2Shapes2.Location = new System.Drawing.Point(0, 282);
-            this.guna2Shapes2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Shapes2.Location = new System.Drawing.Point(0, 226);
             this.guna2Shapes2.Name = "guna2Shapes2";
             this.guna2Shapes2.PolygonSkip = 1;
             this.guna2Shapes2.Rotate = 0F;
             this.guna2Shapes2.RoundedRadius = 30;
             this.guna2Shapes2.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes2.Size = new System.Drawing.Size(642, 70);
+            this.guna2Shapes2.Size = new System.Drawing.Size(571, 56);
             this.guna2Shapes2.TabIndex = 4;
             this.guna2Shapes2.Text = "guna2Shapes2";
             this.guna2Shapes2.UseTransparentBackground = true;
@@ -314,10 +318,9 @@
             this.registrarse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
             this.registrarse.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registrarse.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.registrarse.Location = new System.Drawing.Point(220, 221);
-            this.registrarse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.registrarse.Location = new System.Drawing.Point(196, 177);
             this.registrarse.Name = "registrarse";
-            this.registrarse.Size = new System.Drawing.Size(374, 99);
+            this.registrarse.Size = new System.Drawing.Size(332, 79);
             this.registrarse.TabIndex = 3;
             this.registrarse.Text = "Registrarse";
             // 
@@ -327,10 +330,9 @@
             this.guna2PictureBox4.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(78, -18);
-            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(69, -14);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(495, 276);
+            this.guna2PictureBox4.Size = new System.Drawing.Size(440, 221);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox4.TabIndex = 2;
             this.guna2PictureBox4.TabStop = false;
@@ -341,14 +343,13 @@
             this.guna2Shapes1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Shapes1.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Shapes1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
-            this.guna2Shapes1.Location = new System.Drawing.Point(0, 218);
-            this.guna2Shapes1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Shapes1.Location = new System.Drawing.Point(0, 174);
             this.guna2Shapes1.Name = "guna2Shapes1";
             this.guna2Shapes1.PolygonSkip = 1;
             this.guna2Shapes1.Rotate = 0F;
             this.guna2Shapes1.RoundedRadius = 30;
             this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes1.Size = new System.Drawing.Size(642, 65);
+            this.guna2Shapes1.Size = new System.Drawing.Size(571, 52);
             this.guna2Shapes1.TabIndex = 1;
             this.guna2Shapes1.Text = "guna2Shapes1";
             this.guna2Shapes1.UseTransparentBackground = true;
@@ -360,13 +361,13 @@
             this.guna2Shapes3.BorderColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes3.FillColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes3.Location = new System.Drawing.Point(0, 2);
-
+            this.guna2Shapes3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Shapes3.Name = "guna2Shapes3";
             this.guna2Shapes3.PolygonSkip = 1;
             this.guna2Shapes3.Rotate = 0F;
             this.guna2Shapes3.RoundedRadius = 30;
             this.guna2Shapes3.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-
+            this.guna2Shapes3.Size = new System.Drawing.Size(571, 33);
             this.guna2Shapes3.TabIndex = 18;
             this.guna2Shapes3.Text = "guna2Shapes3";
             this.guna2Shapes3.UseTransparentBackground = true;
@@ -378,9 +379,8 @@
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(642, 301);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(571, 241);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -389,8 +389,9 @@
             // panel_iniciar
             // 
             this.panel_iniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
-            this.panel_iniciar.Controls.Add(this.guna2Button1);
-            this.panel_iniciar.Controls.Add(this.guna2Shapes5);
+            this.panel_iniciar.Controls.Add(this.btn_cerrarI);
+            this.panel_iniciar.Controls.Add(this.guna2Shapes8);
+            this.panel_iniciar.Controls.Add(this.guna2HtmlLabel2);
             this.panel_iniciar.Controls.Add(this.txt_contraseña);
             this.panel_iniciar.Controls.Add(this.txt_usuario);
             this.panel_iniciar.Controls.Add(this.btn_login);
@@ -398,11 +399,24 @@
             this.panel_iniciar.Controls.Add(this.guna2PictureBox5);
             this.panel_iniciar.Controls.Add(this.guna2Shapes4);
             this.panel_iniciar.Controls.Add(this.guna2PictureBox6);
-
+            this.panel_iniciar.Location = new System.Drawing.Point(37, 38);
+            this.panel_iniciar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_iniciar.Name = "panel_iniciar";
-            this.panel_iniciar.Size = new System.Drawing.Size(642, 694);
+            this.panel_iniciar.Size = new System.Drawing.Size(571, 555);
             this.panel_iniciar.TabIndex = 6;
             this.panel_iniciar.Visible = false;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(171, 179);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(519, 67);
+            this.guna2HtmlLabel2.TabIndex = 11;
+            this.guna2HtmlLabel2.Text = "Iniciar Sesión";
             // 
             // txt_contraseña
             // 
@@ -420,14 +434,14 @@
             this.txt_contraseña.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_contraseña.ForeColor = System.Drawing.Color.Black;
             this.txt_contraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_contraseña.Location = new System.Drawing.Point(100, 466);
-            this.txt_contraseña.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_contraseña.Location = new System.Drawing.Point(89, 373);
+            this.txt_contraseña.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_contraseña.Name = "txt_contraseña";
             this.txt_contraseña.PasswordChar = '*';
             this.txt_contraseña.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_contraseña.PlaceholderText = "Contraseña";
             this.txt_contraseña.SelectedText = "";
-            this.txt_contraseña.Size = new System.Drawing.Size(431, 62);
+            this.txt_contraseña.Size = new System.Drawing.Size(383, 50);
             this.txt_contraseña.TabIndex = 10;
             // 
             // txt_usuario
@@ -446,13 +460,13 @@
             this.txt_usuario.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_usuario.ForeColor = System.Drawing.Color.Black;
             this.txt_usuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_usuario.Location = new System.Drawing.Point(100, 358);
-            this.txt_usuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_usuario.Location = new System.Drawing.Point(89, 286);
+            this.txt_usuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_usuario.Name = "txt_usuario";
             this.txt_usuario.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_usuario.PlaceholderText = "Usuario";
             this.txt_usuario.SelectedText = "";
-            this.txt_usuario.Size = new System.Drawing.Size(431, 62);
+            this.txt_usuario.Size = new System.Drawing.Size(383, 50);
             this.txt_usuario.TabIndex = 9;
             // 
             // btn_login
@@ -466,10 +480,9 @@
             this.btn_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btn_login.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.Color.Black;
-            this.btn_login.Location = new System.Drawing.Point(162, 574);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_login.Location = new System.Drawing.Point(144, 459);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(294, 76);
+            this.btn_login.Size = new System.Drawing.Size(261, 61);
             this.btn_login.TabIndex = 8;
             this.btn_login.Text = "Iniciar sesión";
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
@@ -480,7 +493,10 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(0, 0);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Iniciar sesión";
             // 
@@ -490,10 +506,9 @@
             this.guna2PictureBox5.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
             this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(78, -18);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(69, -14);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(495, 276);
+            this.guna2PictureBox5.Size = new System.Drawing.Size(440, 221);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox5.TabIndex = 2;
             this.guna2PictureBox5.TabStop = false;
@@ -504,14 +519,13 @@
             this.guna2Shapes4.BackColor = System.Drawing.Color.Transparent;
             this.guna2Shapes4.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Shapes4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
-            this.guna2Shapes4.Location = new System.Drawing.Point(0, 218);
-            this.guna2Shapes4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Shapes4.Location = new System.Drawing.Point(0, 174);
             this.guna2Shapes4.Name = "guna2Shapes4";
             this.guna2Shapes4.PolygonSkip = 1;
             this.guna2Shapes4.Rotate = 0F;
             this.guna2Shapes4.RoundedRadius = 30;
             this.guna2Shapes4.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes4.Size = new System.Drawing.Size(642, 98);
+            this.guna2Shapes4.Size = new System.Drawing.Size(571, 78);
             this.guna2Shapes4.TabIndex = 1;
             this.guna2Shapes4.Text = "guna2Shapes4";
             this.guna2Shapes4.UseTransparentBackground = true;
@@ -523,9 +537,8 @@
             this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
             this.guna2PictureBox6.ImageRotate = 0F;
             this.guna2PictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(642, 301);
+            this.guna2PictureBox6.Size = new System.Drawing.Size(571, 241);
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox6.TabIndex = 0;
             this.guna2PictureBox6.TabStop = false;
@@ -544,10 +557,9 @@
             this.btn_ingresar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(194)))), ((int)(((byte)(3)))));
             this.btn_ingresar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_ingresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(43)))), ((int)(((byte)(0)))));
-            this.btn_ingresar.Location = new System.Drawing.Point(261, 590);
-            this.btn_ingresar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_ingresar.Location = new System.Drawing.Point(232, 472);
             this.btn_ingresar.Name = "btn_ingresar";
-            this.btn_ingresar.Size = new System.Drawing.Size(338, 66);
+            this.btn_ingresar.Size = new System.Drawing.Size(300, 53);
             this.btn_ingresar.TabIndex = 4;
             this.btn_ingresar.Text = "Ingresar";
             this.btn_ingresar.UseTransparentBackground = true;
@@ -566,24 +578,58 @@
             this.btn_registrar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.btn_registrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_registrar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_registrar.Location = new System.Drawing.Point(261, 489);
-            this.btn_registrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_registrar.Location = new System.Drawing.Point(232, 391);
             this.btn_registrar.Name = "btn_registrar";
-            this.btn_registrar.Size = new System.Drawing.Size(338, 66);
+            this.btn_registrar.Size = new System.Drawing.Size(300, 53);
             this.btn_registrar.TabIndex = 3;
             this.btn_registrar.Text = "Registrarse";
             this.btn_registrar.UseTransparentBackground = true;
             this.btn_registrar.Click += new System.EventHandler(this.btn_registrar_Click);
             // 
-
+            // guna2Shapes8
+            // 
+            this.guna2Shapes8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes8.BorderColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes8.FillColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes8.Location = new System.Drawing.Point(0, 0);
+            this.guna2Shapes8.Name = "guna2Shapes8";
+            this.guna2Shapes8.PolygonSkip = 1;
+            this.guna2Shapes8.Rotate = 0F;
+            this.guna2Shapes8.RoundedRadius = 30;
+            this.guna2Shapes8.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+            this.guna2Shapes8.Size = new System.Drawing.Size(571, 33);
+            this.guna2Shapes8.TabIndex = 31;
+            this.guna2Shapes8.Text = "guna2Shapes8";
+            this.guna2Shapes8.UseTransparentBackground = true;
+            this.guna2Shapes8.Zoom = 100;
+            // 
+            // btn_cerrarI
+            // 
+            this.btn_cerrarI.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cerrarI.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
+            this.btn_cerrarI.BorderThickness = 2;
+            this.btn_cerrarI.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarI.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarI.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cerrarI.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cerrarI.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
+            this.btn_cerrarI.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_cerrarI.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrarI.Location = new System.Drawing.Point(530, 0);
+            this.btn_cerrarI.Name = "btn_cerrarI";
+            this.btn_cerrarI.Size = new System.Drawing.Size(41, 33);
+            this.btn_cerrarI.TabIndex = 30;
+            this.btn_cerrarI.Text = "X";
+            this.btn_cerrarI.UseTransparentBackground = true;
+            this.btn_cerrarI.Click += new System.EventHandler(this.btn_cerrarI_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(847, 785);
+            this.ClientSize = new System.Drawing.Size(753, 628);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -629,8 +675,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_user;
         private Guna.UI2.WinForms.Guna2Button btn_cerrarR;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes8;
+        private Guna.UI2.WinForms.Guna2Button btn_cerrarI;
     }
 }
 
