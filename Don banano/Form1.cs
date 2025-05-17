@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Don_banano;
+
 
 namespace Don_banano
 {
     public partial class Form1 : Form
     {
-        //Lista para almacenar los nombres
-        private List<Usuarios> usuarios = new List<Usuarios>();
 
         //rol
         private string rolSeleccionado;
@@ -23,13 +23,18 @@ namespace Don_banano
             InitializeComponent();
         }
 
+        //Cargar datos de la listView del usuario Vendedor
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            usuarios.Add(new Usuarios("admin", "admin123", "Admin"));
+            if (!UsuariosDB.ListaUsuarios.Exists(u => u.Usuario == "admin"))
+            {
+                UsuariosDB.ListaUsuarios.Add(new Usuarios("admin", "admin123", "Admin"));
+            }
         }
         public List<Usuarios> ObtenerUsuarios()
         {
-            return usuarios;
+            return UsuariosDB.ListaUsuarios;
         }
 
         private void btn_registrar_Click(object sender, EventArgs e)
@@ -79,7 +84,7 @@ namespace Don_banano
 
             // Verificar si el nombre de usuario ya existe
 
-            if (usuarios.Exists(u => u.Usuario == usuario))
+            if (UsuariosDB.ListaUsuarios.Exists(u => u.Usuario == usuario))
             {
                 MessageBox.Show("Este nombre de usuario ya está en uso. Intenta con otro.");
                 return;
@@ -98,7 +103,7 @@ namespace Don_banano
                 return;
             }
 
-            usuarios.Add(new Usuarios(usuario, contraseña, rolSeleccionado));
+            UsuariosDB.ListaUsuarios.Add(new Usuarios(usuario, contraseña, rolSeleccionado));
             MessageBox.Show("Usuario registrado correctamente.");
             MessageBox.Show("Usuario: " + usuario + "\nContraseña: " + contraseña + "\nRol: " + rolSeleccionado);
 
@@ -148,7 +153,7 @@ namespace Don_banano
                 return;
             }
 
-            Usuarios usuarioEncontrado = usuarios.Find(u => u.Usuario == usuario && u.Contraseña == contraseña);
+            Usuarios usuarioEncontrado = UsuariosDB.ListaUsuarios.Find(u => u.Usuario == usuario && u.Contraseña == contraseña);
 
             if (usuarioEncontrado != null)
             {
@@ -183,19 +188,6 @@ namespace Don_banano
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos.");
-            }
-        }
-        //Clase
-        public class Usuarios
-        {
-            public string Usuario { get; set; }
-            public string Contraseña { get; set; }
-            public string Rol { get; set; }
-            public Usuarios(string usuario, string contraseña, string rol)
-            {
-                Usuario = usuario;
-                Contraseña = contraseña;
-                Rol = rol;
             }
         }
     }

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using static Don_banano.Form1; // Importamos la clase Usuarios
+using static Don_banano.Form1;
+using Don_banano;
+
 
 namespace Don_banano
 {
@@ -12,7 +14,7 @@ namespace Don_banano
             InitializeComponent();
             CargarVendedores();
         }
-
+ 
         private void CargarVendedores()
         {
             listViewVendedores.Items.Clear();
