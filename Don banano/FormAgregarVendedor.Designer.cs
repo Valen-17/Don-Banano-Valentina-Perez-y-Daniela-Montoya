@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgregarVendedor));
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_agregar = new Guna.UI2.WinForms.Guna2Button();
             this.panel_agregar = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_volver = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_cerrarA = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
             this.txt_contraseña = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_usuario = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,7 +41,7 @@
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_volver = new Guna.UI2.WinForms.Guna2Button();
             this.btn_login = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.listViewVendedores = new System.Windows.Forms.ListView();
@@ -54,7 +54,6 @@
             this.guna2Shapes11 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes12 = new Guna.UI2.WinForms.Guna2Shapes();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_agregar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3.SuspendLayout();
             this.panel_agregar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
@@ -68,7 +67,7 @@
             this.guna2Panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel3.BackgroundImage")));
             this.guna2Panel3.Controls.Add(this.btn_agregar);
             this.guna2Panel3.Controls.Add(this.panel_agregar);
-            this.guna2Panel3.Controls.Add(this.guna2Button1);
+            this.guna2Panel3.Controls.Add(this.btn_volver);
             this.guna2Panel3.Controls.Add(this.btn_login);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel3.Controls.Add(this.listViewVendedores);
@@ -84,11 +83,30 @@
             this.guna2Panel3.Size = new System.Drawing.Size(754, 634);
             this.guna2Panel3.TabIndex = 54;
             // 
+            // btn_agregar
+            // 
+            this.btn_agregar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_agregar.BorderRadius = 15;
+            this.btn_agregar.BorderThickness = 2;
+            this.btn_agregar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_agregar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_agregar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_agregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_agregar.FillColor = System.Drawing.Color.OliveDrab;
+            this.btn_agregar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_agregar.ForeColor = System.Drawing.Color.Black;
+            this.btn_agregar.Location = new System.Drawing.Point(477, 292);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(129, 49);
+            this.btn_agregar.TabIndex = 56;
+            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.UseTransparentBackground = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
+            // 
             // panel_agregar
             // 
             this.panel_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
-            this.panel_agregar.Controls.Add(this.btn_volver);
-            this.panel_agregar.Controls.Add(this.guna2Button2);
+            this.panel_agregar.Controls.Add(this.btn_cerrarA);
             this.panel_agregar.Controls.Add(this.guna2Shapes5);
             this.panel_agregar.Controls.Add(this.txt_contraseña);
             this.panel_agregar.Controls.Add(this.txt_usuario);
@@ -97,50 +115,31 @@
             this.panel_agregar.Controls.Add(this.guna2PictureBox5);
             this.panel_agregar.Controls.Add(this.guna2Shapes4);
             this.panel_agregar.Controls.Add(this.guna2PictureBox6);
-            this.panel_agregar.Location = new System.Drawing.Point(670, 39);
+            this.panel_agregar.Location = new System.Drawing.Point(651, 53);
             this.panel_agregar.Name = "panel_agregar";
             this.panel_agregar.Size = new System.Drawing.Size(571, 555);
             this.panel_agregar.TabIndex = 55;
             this.panel_agregar.Visible = false;
             // 
-            // btn_volver
+            // btn_cerrarA
             // 
-            this.btn_volver.BackColor = System.Drawing.Color.Transparent;
-            this.btn_volver.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.btn_volver.BorderRadius = 15;
-            this.btn_volver.BorderThickness = 3;
-            this.btn_volver.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_volver.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_volver.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_volver.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_volver.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.btn_volver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_volver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.btn_volver.Location = new System.Drawing.Point(299, 454);
-            this.btn_volver.Name = "btn_volver";
-            this.btn_volver.Size = new System.Drawing.Size(187, 53);
-            this.btn_volver.TabIndex = 26;
-            this.btn_volver.Text = "Cerrar";
-            this.btn_volver.UseTransparentBackground = true;
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
-            this.guna2Button2.BorderThickness = 2;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(529, 1);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(41, 33);
-            this.guna2Button2.TabIndex = 19;
-            this.guna2Button2.Text = "X";
-            this.guna2Button2.UseTransparentBackground = true;
+            this.btn_cerrarA.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cerrarA.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
+            this.btn_cerrarA.BorderThickness = 2;
+            this.btn_cerrarA.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarA.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarA.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cerrarA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cerrarA.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
+            this.btn_cerrarA.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_cerrarA.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrarA.Location = new System.Drawing.Point(529, 1);
+            this.btn_cerrarA.Name = "btn_cerrarA";
+            this.btn_cerrarA.Size = new System.Drawing.Size(41, 33);
+            this.btn_cerrarA.TabIndex = 19;
+            this.btn_cerrarA.Text = "X";
+            this.btn_cerrarA.UseTransparentBackground = true;
+            this.btn_cerrarA.Click += new System.EventHandler(this.btn_cerrarA_Click);
             // 
             // guna2Shapes5
             // 
@@ -221,7 +220,7 @@
             this.btn_actualizar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(177)))), ((int)(((byte)(0)))));
             this.btn_actualizar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_actualizar.ForeColor = System.Drawing.Color.Black;
-            this.btn_actualizar.Location = new System.Drawing.Point(69, 454);
+            this.btn_actualizar.Location = new System.Drawing.Point(182, 464);
             this.btn_actualizar.Name = "btn_actualizar";
             this.btn_actualizar.Size = new System.Drawing.Size(187, 53);
             this.btn_actualizar.TabIndex = 8;
@@ -284,22 +283,23 @@
             this.guna2PictureBox6.TabStop = false;
             this.guna2PictureBox6.UseTransparentBackground = true;
             // 
-            // guna2Button1
+            // btn_volver
             // 
-            this.guna2Button1.BorderRadius = 15;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(477, 353);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(129, 50);
-            this.guna2Button1.TabIndex = 54;
-            this.guna2Button1.Text = "Volver";
+            this.btn_volver.BorderRadius = 15;
+            this.btn_volver.BorderThickness = 2;
+            this.btn_volver.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_volver.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_volver.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_volver.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_volver.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.btn_volver.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_volver.ForeColor = System.Drawing.Color.Black;
+            this.btn_volver.Location = new System.Drawing.Point(477, 353);
+            this.btn_volver.Name = "btn_volver";
+            this.btn_volver.Size = new System.Drawing.Size(129, 50);
+            this.btn_volver.TabIndex = 54;
+            this.btn_volver.Text = "Volver";
+            this.btn_volver.Click += new System.EventHandler(this.btn_volver_Click);
             // 
             // btn_login
             // 
@@ -453,26 +453,6 @@
             this.label3.Size = new System.Drawing.Size(0, 51);
             this.label3.TabIndex = 42;
             // 
-            // btn_agregar
-            // 
-            this.btn_agregar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_agregar.BorderRadius = 15;
-            this.btn_agregar.BorderThickness = 2;
-            this.btn_agregar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_agregar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_agregar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_agregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_agregar.FillColor = System.Drawing.Color.OliveDrab;
-            this.btn_agregar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_agregar.ForeColor = System.Drawing.Color.Black;
-            this.btn_agregar.Location = new System.Drawing.Point(477, 292);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(129, 49);
-            this.btn_agregar.TabIndex = 56;
-            this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.UseTransparentBackground = true;
-            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
-            // 
             // FormAgregarVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -507,9 +487,9 @@
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes11;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes12;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_volver;
         private Guna.UI2.WinForms.Guna2Panel panel_agregar;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btn_cerrarA;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes5;
         private Guna.UI2.WinForms.Guna2TextBox txt_contraseña;
         private Guna.UI2.WinForms.Guna2TextBox txt_usuario;
@@ -518,7 +498,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
-        private Guna.UI2.WinForms.Guna2Button btn_volver;
         private Guna.UI2.WinForms.Guna2Button btn_agregar;
     }
 }

@@ -169,6 +169,12 @@ namespace Don_banano
                         formAdmin.Show();
                         this.Hide();
                         break;
+                    case "vendedor": 
+                        MessageBox.Show("Bienvenido vendedor: " + usuarioEncontrado.Usuario);
+                        FormVendedor formVendedor = new FormVendedor();
+                        formVendedor.Show();
+                        this.Hide();
+                        break;
                     default:
                         MessageBox.Show("Usuario no encontrado.");
                         break;

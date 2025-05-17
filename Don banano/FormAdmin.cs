@@ -23,5 +23,12 @@ namespace Don_banano
             formAgregar.Show();
             this.Hide();
         }
+
+        private void btn_volver_Click(object sender, EventArgs e)
+        {
+            Form1 formPrincipal = new Form1();
+            formPrincipal.Show();
+            this.Hide();
+        }
     }
 }
