@@ -27,6 +27,10 @@ namespace Don_banano
         {
             usuarios.Add(new Usuarios("admin", "admin123", "Admin"));
         }
+        public List<Usuarios> ObtenerUsuarios()
+        {
+            return usuarios;
+        }
 
         private void btn_registrar_Click(object sender, EventArgs e)
         {
@@ -36,7 +40,6 @@ namespace Don_banano
             panel_registrarse.Location = new Point(x, y);
             panel_registrarse.Visible = true;
             panel_registrarse.BringToFront();
-            panel_registrarse.Location = new Point(x, y); //Ubicar en la mitad de este panel
         }
 
         //Panel Registrarse
