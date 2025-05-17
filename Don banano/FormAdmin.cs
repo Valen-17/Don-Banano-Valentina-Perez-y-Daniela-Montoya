@@ -17,5 +17,11 @@ namespace Don_banano
             InitializeComponent();
         }
 
+        private void btn_vendedores_Click(object sender, EventArgs e)
+        {
+            FormAgregarVendedor formAgregar = new FormAgregarVendedor();
+            formAgregar.Show();
+            this.Hide();
+        }
     }
 }

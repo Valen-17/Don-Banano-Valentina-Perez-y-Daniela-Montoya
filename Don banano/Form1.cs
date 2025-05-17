@@ -16,7 +16,7 @@ namespace Don_banano
         private List<Usuarios> usuarios = new List<Usuarios>();
 
         //rol
-        private string rolSeleccionado = "Cliente";
+        private string rolSeleccionado;
 
         public Form1()
         {
@@ -25,7 +25,7 @@ namespace Don_banano
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            usuarios.Add(new Usuarios("admin", "admin123", "Admin"));
         }
 
         private void btn_registrar_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Don_banano
             panel_registrarse.Location = new Point(x, y);
             panel_registrarse.Visible = true;
             panel_registrarse.BringToFront();
-            panel_registrarse.Location = new Point(x,y); //Ubicar en la mitad de este panel
+            panel_registrarse.Location = new Point(x, y); //Ubicar en la mitad de este panel
         }
 
         //Panel Registrarse
@@ -66,6 +66,11 @@ namespace Don_banano
             if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contraseña) || string.IsNullOrEmpty(confirmar))
             {
                 MessageBox.Show("Por favor, completa todos los campos.");
+                return;
+            }
+            if (string.IsNullOrEmpty(rolSeleccionado))
+            {
+                MessageBox.Show("Por favor, selecciona un rol antes de registrarte.");
                 return;
             }
 
@@ -103,11 +108,6 @@ namespace Don_banano
 
         }
         //Selección de los roles
-        private void btn_vendedor_Click(object sender, EventArgs e)
-        {
-            rolSeleccionado = "Vendedor";
-            MessageBox.Show("Rol correctamente seleccionado");
-        }
         private void btn_cliente_Click(object sender, EventArgs e)
         {
             rolSeleccionado = "Cliente";
@@ -117,6 +117,64 @@ namespace Don_banano
         {
             rolSeleccionado = "Repartidor";
             MessageBox.Show("Rol correctamente seleccionado");
+        }
+
+        //Panel Iniciar Sesión
+        private void btn_cerrarI_Click(object sender, EventArgs e)
+        {
+            panel_iniciar.Visible = false;
+            panel_iniciar.SendToBack();
+        }
+        private void btn_ingresar_Click(object sender, EventArgs e)
+        {
+            int x = (this.ClientSize.Width - panel_registrarse.Width) / 2;
+            int y = (this.ClientSize.Height - panel_registrarse.Height) / 2;
+            panel_iniciar.Location = new Point(x, y);
+            panel_iniciar.Visible = true;
+            panel_iniciar.BringToFront();
+            panel_iniciar.Location = new Point(x, y);
+        }
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            string usuario = txt_usuario.Text.Trim();
+            string contraseña = txt_contraseña.Text.Trim();
+
+            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contraseña))
+            {
+                MessageBox.Show("Por favor, completa todos los campos.");
+                return;
+            }
+
+            Usuarios usuarioEncontrado = usuarios.Find(u => u.Usuario == usuario && u.Contraseña == contraseña);
+
+            if (usuarioEncontrado != null)
+            {
+                switch (usuarioEncontrado.Rol)
+                {
+                    case "Cliente":
+                        FormCliente formCliente = new FormCliente();
+                        formCliente.Show();
+                        this.Hide();
+                        break;
+                    case "Repartidor":
+                        FormRepartidor formRepartidor = new FormRepartidor();
+                        formRepartidor.Show();
+                        this.Hide();
+                        break;
+                    case "Admin":
+                        FormAdmin formAdmin = new FormAdmin();
+                        formAdmin.Show();
+                        this.Hide();
+                        break;
+                    default:
+                        MessageBox.Show("Usuario no encontrado.");
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos.");
+            }
         }
         //Clase
         public class Usuarios
