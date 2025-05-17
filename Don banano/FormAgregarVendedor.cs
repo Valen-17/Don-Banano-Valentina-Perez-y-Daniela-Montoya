@@ -59,7 +59,7 @@ namespace Don_banano
 
             if (string.IsNullOrEmpty(nuevoUsuario) || string.IsNullOrEmpty(nuevaContraseña))
             {
-                MessageBox.Show("Completa todos los campos.");
+                MessageBox.Show("Completa todos los campos");
                 return;
             }
 
@@ -72,12 +72,12 @@ namespace Don_banano
                 // Validar si ya existe
                 if (lista.Exists(u => u.Usuario == nuevoUsuario))
                 {
-                    MessageBox.Show("Ese nombre de usuario ya existe.");
+                    MessageBox.Show("Ese nombre de usuario ya existe");
                     return;
                 }
 
                 lista.Add(new Usuarios(nuevoUsuario, nuevaContraseña, "vendedor"));
-                MessageBox.Show("Vendedor agregado correctamente.");
+                MessageBox.Show("Vendedor agregado correctamente");
 
                 txt_usuario.Clear();
                 txt_contraseña.Clear();
@@ -91,6 +91,89 @@ namespace Don_banano
             FormAdmin formAdmin = new FormAdmin();
             formAdmin.Show();
             this.Hide();
+        }
+
+        //Panel editar y eliminar
+        private void btn_editar_Click(object sender, EventArgs e)
+        {
+            //Seleciionar un vendedor para que sea posible editarlo
+            if (listViewVendedores.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Selecciona un vendedor para editar.");
+                return;
+            }
+
+            ListViewItem item = listViewVendedores.SelectedItems[0];
+            txt_usuarioE.Text = item.SubItems[0].Text;
+            txt_contraseñaE.Text = item.SubItems[1].Text;
+
+            panel_editar.Visible = true;
+            panel_editar.BringToFront();
+            int x = (this.ClientSize.Width - panel_editar.Width) / 2;
+            int y = (this.ClientSize.Height - panel_editar.Height) / 2;
+            panel_editar.Location = new System.Drawing.Point(x, y);
+        }
+
+        private void btn_cerrarE_Click(object sender, EventArgs e)
+        {
+            panel_editar.Visible = false;
+            panel_editar.SendToBack();
+        }
+
+        private void btn_editarE_Click(object sender, EventArgs e)
+        {
+            string nuevoUsuario = txt_usuarioE.Text.Trim();
+            string nuevaContraseña = txt_contraseñaE.Text.Trim();
+
+            if (string.IsNullOrEmpty(nuevoUsuario) || string.IsNullOrEmpty(nuevaContraseña))
+            {
+                MessageBox.Show("Completa todos los campos");
+                return;
+            }
+
+            var lista = UsuariosDB.ListaUsuarios;
+            string usuarioOriginal = listViewVendedores.SelectedItems[0].SubItems[0].Text;
+
+            // Buscar el usuario original
+            Usuarios usuario = lista.Find(u => u.Usuario == usuarioOriginal && u.Rol.ToLower() == "vendedor");
+
+            if (usuario != null)
+            {
+                usuario.Usuario = nuevoUsuario;
+                usuario.Contraseña = nuevaContraseña;
+                MessageBox.Show("Vendedor editado correctamente");
+                CargarVendedores();
+                panel_editar.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el vendedor");
+            }
+        }
+
+        private void btn_EliminarE_Click(object sender, EventArgs e)
+        {
+            string usuarioAEliminar = listViewVendedores.SelectedItems[0].SubItems[0].Text;
+
+            DialogResult confirm = MessageBox.Show( $"¿Estás seguro de que deseas eliminar al vendedor '{usuarioAEliminar}'?","Confirmar eliminación", MessageBoxButtons.YesNo);
+
+            if (confirm == DialogResult.Yes)
+            {
+                var lista = UsuariosDB.ListaUsuarios;
+                Usuarios usuario = lista.Find(u => u.Usuario == usuarioAEliminar && u.Rol.ToLower() == "vendedor");
+
+                if (usuario != null)
+                {
+                    lista.Remove(usuario);
+                    MessageBox.Show("Vendedor eliminado correctamente");
+                    CargarVendedores();
+                    panel_editar.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró el vendedor a eliminar");
+                }
+            }
         }
     }
 }
