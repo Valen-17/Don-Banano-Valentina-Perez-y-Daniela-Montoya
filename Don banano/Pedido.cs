@@ -26,5 +26,9 @@ namespace Don_banano
             Sucursal = sucursal;
             HoraCreacion = DateTime.Now;
         }
+
+        public Pedido()
+        {
+        }
     }
 }

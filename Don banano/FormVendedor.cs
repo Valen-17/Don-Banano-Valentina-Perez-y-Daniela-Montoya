@@ -12,14 +12,14 @@ namespace Don_banano
 {
     public partial class FormVendedor : Form
     {
-        private FormRepartidor FormRepartidor;
+        private FormRepartidor _formRepartidor;
         private List<Pedido> pedidosCreados = new List<Pedido>();
         private Queue<Pedido> colaPedidos = new Queue<Pedido>();
 
         public FormVendedor(FormRepartidor repartidor)
         {
             InitializeComponent();
-            FormRepartidor = repartidor;
+            _formRepartidor = repartidor;
         }
 
         private void FormVendedor_Load(object sender, EventArgs e)

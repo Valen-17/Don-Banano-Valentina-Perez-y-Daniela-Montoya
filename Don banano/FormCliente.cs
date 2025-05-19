@@ -10,12 +10,12 @@ namespace Don_banano
         private List<Pedido> entregasPendientes = new List<Pedido>();
         private Queue<Pedido> colaEntregas = new Queue<Pedido>();
 
-        private FormRepartidor FormRepartidor;
+        private FormRepartidor _formRepartidor;
 
         public FormCliente(FormRepartidor repartidor)
         {
             InitializeComponent();
-            FormRepartidor = repartidor;
+            _formRepartidor = repartidor;
         }
 
         private void FormCliente_Load(object sender, EventArgs e)
@@ -64,9 +64,10 @@ namespace Don_banano
                     .Select(item => item.Text)
                     .ToArray());
 
-            return new Pedido
+            return new Pedido()
             {
-                Orden = numeroOrden,
+                
+               Orden = numeroOrden,
                 Cliente = txtNombreCliente.Text,
                 Direccion = txtDireccion.Text,
                 Productos = productos,
@@ -80,7 +81,7 @@ namespace Don_banano
             // Crear y agregar el pedido
             Pedido nuevoPedido = CrearPedidoDesdeFormulario();
             entregasPendientes.Add(nuevoPedido);
-            FormRepartidor.AgregarPedidoAPendientes(nuevoPedido);
+            _formRepartidor.AgregarPedidoAPendientes(nuevoPedido);
 
             // Reordenar por hora de creación
             var ordenados = entregasPendientes.OrderBy(p => p.HoraCreacion).ToList();
