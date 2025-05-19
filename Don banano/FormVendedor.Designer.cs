@@ -95,9 +95,7 @@
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Panel1.Controls.Add(this.guna2Panel4);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
-            this.guna2Panel1.Controls.Add(this.panel_crearpedido);
             this.guna2Panel1.Controls.Add(this.guna2Button7);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
@@ -124,11 +122,12 @@
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel12);
             this.guna2Panel4.Controls.Add(this.guna2Shapes3);
             this.guna2Panel4.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel4.Location = new System.Drawing.Point(724, 9);
+            this.guna2Panel4.Location = new System.Drawing.Point(205, 26);
             this.guna2Panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(571, 555);
             this.guna2Panel4.TabIndex = 14;
+
             // 
             // guna2Button4
             // 
@@ -142,12 +141,13 @@
             this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(528, 0);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(41, 33);
-            this.guna2Button4.TabIndex = 19;
-            this.guna2Button4.Text = "X";
-            this.guna2Button4.UseTransparentBackground = true;
+this.guna2Button4.Location = new System.Drawing.Point(594, 0);
+this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+this.guna2Button4.Name = "guna2Button4";
+this.guna2Button4.Size = new System.Drawing.Size(46, 41);
+this.guna2Button4.TabIndex = 19;
+this.guna2Button4.Text = "X";
+this.guna2Button4.UseTransparentBackground = true;
             // 
             // guna2Shapes9
             // 
@@ -155,16 +155,17 @@
             this.guna2Shapes9.BorderColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes9.FillColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes9.Location = new System.Drawing.Point(0, 0);
-            this.guna2Shapes9.Name = "guna2Shapes9";
-            this.guna2Shapes9.PolygonSkip = 1;
-            this.guna2Shapes9.Rotate = 0F;
-            this.guna2Shapes9.RoundedRadius = 30;
-            this.guna2Shapes9.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes9.Size = new System.Drawing.Size(571, 33);
-            this.guna2Shapes9.TabIndex = 20;
-            this.guna2Shapes9.Text = "guna2Shapes9";
-            this.guna2Shapes9.UseTransparentBackground = true;
-            this.guna2Shapes9.Zoom = 100;
+this.guna2Shapes9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+this.guna2Shapes9.Name = "guna2Shapes9";
+this.guna2Shapes9.PolygonSkip = 1;
+this.guna2Shapes9.Rotate = 0F;
+this.guna2Shapes9.RoundedRadius = 30;
+this.guna2Shapes9.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+this.guna2Shapes9.Size = new System.Drawing.Size(642, 41);
+this.guna2Shapes9.TabIndex = 20;
+this.guna2Shapes9.Text = "guna2Shapes9";
+this.guna2Shapes9.UseTransparentBackground = true;
+this.guna2Shapes9.Zoom = 100;
             // 
             // listView2
             // 
@@ -264,36 +265,39 @@
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
-            this.guna2Panel3.Controls.Add(this.guna2Button5);
-            this.guna2Panel3.Controls.Add(this.guna2Shapes10);
-            this.guna2Panel3.Controls.Add(this.listView_historialpedidos);
-            this.guna2Panel3.Controls.Add(this.guna2HtmlLabel3);
-            this.guna2Panel3.Controls.Add(this.guna2Shapes8);
-            this.guna2Panel3.Controls.Add(this.guna2PictureBox3);
-            this.guna2Panel3.Location = new System.Drawing.Point(83, 43);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(571, 555);
-            this.guna2Panel3.TabIndex = 16;
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
-            this.guna2Button5.BorderThickness = 2;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(528, 0);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(41, 33);
-            this.guna2Button5.TabIndex = 19;
-            this.guna2Button5.Text = "X";
-            this.guna2Button5.UseTransparentBackground = true;
+this.guna2Panel3.Controls.Add(this.guna2Panel4);
+this.guna2Panel3.Controls.Add(this.guna2Button5);
+this.guna2Panel3.Controls.Add(this.guna2Shapes10);
+this.guna2Panel3.Controls.Add(this.panel_crearpedido);
+this.guna2Panel3.Controls.Add(this.listView_historialpedidos);
+this.guna2Panel3.Controls.Add(this.guna2HtmlLabel3);
+this.guna2Panel3.Controls.Add(this.guna2Shapes8);
+this.guna2Panel3.Controls.Add(this.guna2PictureBox3);
+this.guna2Panel3.Location = new System.Drawing.Point(0, 11);
+this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+this.guna2Panel3.Name = "guna2Panel3";
+this.guna2Panel3.Size = new System.Drawing.Size(642, 694);
+this.guna2Panel3.TabIndex = 16;
+// 
+// guna2Button5
+// 
+this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
+this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
+this.guna2Button5.BorderThickness = 2;
+this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
+this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+this.guna2Button5.ForeColor = System.Drawing.Color.White;
+this.guna2Button5.Location = new System.Drawing.Point(594, 0);
+this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+this.guna2Button5.Name = "guna2Button5";
+this.guna2Button5.Size = new System.Drawing.Size(46, 41);
+this.guna2Button5.TabIndex = 19;
+this.guna2Button5.Text = "X";
+this.guna2Button5.UseTransparentBackground = true;
             // 
             // guna2Shapes10
             // 
@@ -301,16 +305,17 @@
             this.guna2Shapes10.BorderColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes10.FillColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes10.Location = new System.Drawing.Point(0, 0);
-            this.guna2Shapes10.Name = "guna2Shapes10";
-            this.guna2Shapes10.PolygonSkip = 1;
-            this.guna2Shapes10.Rotate = 0F;
-            this.guna2Shapes10.RoundedRadius = 30;
-            this.guna2Shapes10.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes10.Size = new System.Drawing.Size(571, 33);
-            this.guna2Shapes10.TabIndex = 20;
-            this.guna2Shapes10.Text = "guna2Shapes10";
-            this.guna2Shapes10.UseTransparentBackground = true;
-            this.guna2Shapes10.Zoom = 100;
+this.guna2Shapes10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+this.guna2Shapes10.Name = "guna2Shapes10";
+this.guna2Shapes10.PolygonSkip = 1;
+this.guna2Shapes10.Rotate = 0F;
+this.guna2Shapes10.RoundedRadius = 30;
+this.guna2Shapes10.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+this.guna2Shapes10.Size = new System.Drawing.Size(642, 41);
+this.guna2Shapes10.TabIndex = 20;
+this.guna2Shapes10.Text = "guna2Shapes10";
+this.guna2Shapes10.UseTransparentBackground = true;
+this.guna2Shapes10.Zoom = 100;
             // 
             // listView_historialpedidos
             // 
@@ -429,11 +434,11 @@
             this.panel_crearpedido.Controls.Add(this.guna2HtmlLabel2);
             this.panel_crearpedido.Controls.Add(this.guna2Shapes6);
             this.panel_crearpedido.Controls.Add(this.guna2PictureBox2);
-            this.panel_crearpedido.Location = new System.Drawing.Point(270, 28);
-            this.panel_crearpedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel_crearpedido.Name = "panel_crearpedido";
-            this.panel_crearpedido.Size = new System.Drawing.Size(571, 555);
-            this.panel_crearpedido.TabIndex = 15;
+this.panel_crearpedido.Location = new System.Drawing.Point(270, 28);
+this.panel_crearpedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+this.panel_crearpedido.Name = "panel_crearpedido";
+this.panel_crearpedido.Size = new System.Drawing.Size(571, 555);
+this.panel_crearpedido.TabIndex = 15;
             // 
             // btn_cerrarR
             // 
@@ -447,9 +452,10 @@
             this.btn_cerrarR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
             this.btn_cerrarR.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_cerrarR.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrarR.Location = new System.Drawing.Point(528, 0);
+            this.btn_cerrarR.Location = new System.Drawing.Point(594, 0);
+            this.btn_cerrarR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cerrarR.Name = "btn_cerrarR";
-            this.btn_cerrarR.Size = new System.Drawing.Size(41, 33);
+            this.btn_cerrarR.Size = new System.Drawing.Size(46, 41);
             this.btn_cerrarR.TabIndex = 26;
             this.btn_cerrarR.Text = "X";
             this.btn_cerrarR.UseTransparentBackground = true;
@@ -460,12 +466,13 @@
             this.guna2Shapes7.BorderColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes7.FillColor = System.Drawing.Color.LemonChiffon;
             this.guna2Shapes7.Location = new System.Drawing.Point(0, 0);
+            this.guna2Shapes7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Shapes7.Name = "guna2Shapes7";
             this.guna2Shapes7.PolygonSkip = 1;
             this.guna2Shapes7.Rotate = 0F;
             this.guna2Shapes7.RoundedRadius = 30;
             this.guna2Shapes7.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes7.Size = new System.Drawing.Size(571, 33);
+            this.guna2Shapes7.Size = new System.Drawing.Size(642, 41);
             this.guna2Shapes7.TabIndex = 27;
             this.guna2Shapes7.Text = "guna2Shapes7";
             this.guna2Shapes7.UseTransparentBackground = true;

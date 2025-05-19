@@ -7,6 +7,7 @@
         public string Sucursal { get; set; }
         public decimal Precio { get; set; }
         public string Direccion { get; set; }
+        public string Estado { get; internal set; }
 
         public Producto(string nombre, int stock, string sucursal, decimal precio, string direccion)
         {
