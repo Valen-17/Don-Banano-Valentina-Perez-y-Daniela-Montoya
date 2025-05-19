@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Don_banano;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
-using Don_banano;
 
 namespace Don_banano
 {
@@ -246,6 +247,51 @@ namespace Don_banano
         {
             panel_factura.Visible = false;
             panel_factura.SendToBack();
+        }
+
+        private void panel_factura_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_descargarFactura_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (listView_factura.Items.Count > 0)
+                {
+                    string ruta = "C:\\Users\\Daniela\\source\\repos\\Don-Banano-Valentina-Perez-y-Daniela-Montoya\\archivos\\factura.txt";
+                    StreamWriter sw = new StreamWriter(ruta);
+
+                    // Escribir encabezado
+                    sw.WriteLine("Producto;Precio;Cantidad;Subtotal");
+
+                    // Recorrer el ListView
+                    foreach (ListViewItem item in listView_factura.Items)
+                    {
+                        string producto = item.SubItems[0].Text;
+                        string precio = item.SubItems[1].Text;
+                        string cantidad = item.SubItems[2].Text;
+                        string subtotal = item.SubItems[3].Text;
+
+                        sw.WriteLine($"{producto};{precio};{cantidad};{subtotal}");
+                    }
+
+                    // Agregar total al final
+                    sw.WriteLine($"\nTotal:;{guna2HtmlLabel6}");
+
+                    sw.Close();
+                    MessageBox.Show("Factura descargada con éxito");
+                }
+                else
+                {
+                    MessageBox.Show("No hay productos en la factura");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

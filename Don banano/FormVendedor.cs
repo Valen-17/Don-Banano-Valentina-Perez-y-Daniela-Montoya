@@ -94,6 +94,41 @@ namespace Don_banano
             );
         }
 
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            panel_crearpedido.Visible = false;
+            panel_crearpedido.SendToBack();
+        }
 
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            panel_crearpedido.Visible = true;
+            panel_crearpedido.BringToFront();
+            int x = (this.ClientSize.Width - panel_crearpedido.Width) / 2;
+            int y = (this.ClientSize.Height - panel_crearpedido.Height) / 2;
+            panel_crearpedido.Location = new System.Drawing.Point(x, y);
+        }
+
+        private void cerrarInventarioVendedor_Click(object sender, EventArgs e)
+        {
+            panelInventarioVendedor.Visible = false;
+            panelInventarioVendedor.SendToBack();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            panelInventarioVendedor.Visible = true;
+            panelInventarioVendedor.BringToFront();
+            int x = (this.ClientSize.Width - panelInventarioVendedor.Width) / 2;
+            int y = (this.ClientSize.Height - panelInventarioVendedor.Height) / 2;
+            panelInventarioVendedor.Location = new System.Drawing.Point(x, y);
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

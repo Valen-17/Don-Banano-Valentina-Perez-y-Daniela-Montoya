@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Don_banano
 {
-    public partial class FormRepartidor : Form
+    public partial class  FormRepartidor : Form
     {
         private List<Pedido> entregasPendientes = new List<Pedido>();
         private Queue<Pedido> colaEntregas = new Queue<Pedido>();
@@ -20,7 +20,12 @@ namespace Don_banano
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            CentrarPanel(panel1_repartidor);
+            Facturar.ProductosVendidos.Clear();
+            panel1_repartidor.Visible = true;
+            panel1_repartidor.BringToFront();
+            int x = (this.ClientSize.Width - panel1_repartidor.Width) / 2;
+            int y = (this.ClientSize.Height - panel1_repartidor.Height) / 2;
+            panel1_repartidor.Location = new Point(x, y);
         }
 
         private void guna2Button11_Click(object sender, EventArgs e)
@@ -31,7 +36,12 @@ namespace Don_banano
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            CentrarPanel(panel2_completadas);
+            Facturar.ProductosVendidos.Clear();
+            panel2_completadas.Visible = true;
+            panel2_completadas.BringToFront();
+            int x = (this.ClientSize.Width - panel2_completadas.Width) / 2;
+            int y = (this.ClientSize.Height - panel2_completadas.Height) / 2;
+            panel2_completadas.Location = new Point(x, y);
         }
 
         private void guna2Button10_Click(object sender, EventArgs e)
@@ -42,22 +52,18 @@ namespace Don_banano
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            CentrarPanel(panel3_actual);
+            Facturar.ProductosVendidos.Clear();
+            panel3_actual.Visible = true;
+            panel3_actual.BringToFront();
+            int x = (this.ClientSize.Width - panel3_actual.Width) / 2;
+            int y = (this.ClientSize.Height - panel3_actual.Height) / 2;
+            panel3_actual.Location = new Point(x, y);
         }
 
         private void btn_cerrarR_Click(object sender, EventArgs e)
         {
             panel3_actual.Visible = false;
             panel3_actual.SendToBack();
-        }
-
-        private void CentrarPanel(Panel panel)
-        {
-            int x = (this.ClientSize.Width - panel.Width) / 2;
-            int y = (this.ClientSize.Height - panel.Height) / 2;
-            panel.Location = new Point(x, y);
-            panel.Visible = true;
-            panel.BringToFront();
         }
 
         // ────── Navegación ───────────────────────────────────────────
