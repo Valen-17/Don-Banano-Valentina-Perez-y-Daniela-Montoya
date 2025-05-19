@@ -17,9 +17,14 @@ namespace Don_banano
         public FormInventario()
         {
             InitializeComponent();
+        }
+
+        //Productos por defecto
+        private void FormInventario_Load(object sender, EventArgs e)
+        {
             CargarInventario();
         }
-        
+
         //Agregar productos al inventario
         private void btn_agregar_Click(object sender, EventArgs e)
         {
@@ -89,7 +94,7 @@ namespace Don_banano
         {
             if (listView_inventario.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Selecciona un vendedor para editar.");
+                MessageBox.Show("Selecciona un producto para editar.");
                 return;
             }
 
@@ -171,6 +176,5 @@ namespace Don_banano
                 listView_inventario.Items.Add(item);
             }
         }
-
     }
 }

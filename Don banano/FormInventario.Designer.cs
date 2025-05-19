@@ -173,7 +173,7 @@
             this.panel_agregar.Controls.Add(this.guna2PictureBox3);
             this.panel_agregar.Controls.Add(this.guna2HtmlLabel13);
             this.panel_agregar.Controls.Add(this.guna2Shapes1);
-            this.panel_agregar.Location = new System.Drawing.Point(653, 382);
+            this.panel_agregar.Location = new System.Drawing.Point(617, 437);
             this.panel_agregar.Name = "panel_agregar";
             this.panel_agregar.Size = new System.Drawing.Size(730, 610);
             this.panel_agregar.TabIndex = 42;
@@ -386,7 +386,7 @@
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(97, 14);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(31, 17);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(136, 119);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -400,9 +400,9 @@
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(212)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(239, 14);
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(146, 8);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(486, 119);
+            this.guna2HtmlLabel13.Size = new System.Drawing.Size(579, 138);
             this.guna2HtmlLabel13.TabIndex = 27;
             this.guna2HtmlLabel13.Text = "Agregar productos";
             this.guna2HtmlLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -460,7 +460,7 @@
             this.panel_editar.Controls.Add(this.guna2PictureBox2);
             this.panel_editar.Controls.Add(this.guna2HtmlLabel1);
             this.panel_editar.Controls.Add(this.guna2Shapes2);
-            this.panel_editar.Location = new System.Drawing.Point(706, 22);
+            this.panel_editar.Location = new System.Drawing.Point(675, 37);
             this.panel_editar.Name = "panel_editar";
             this.panel_editar.Size = new System.Drawing.Size(730, 610);
             this.panel_editar.TabIndex = 31;
@@ -672,7 +672,7 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(97, 14);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(20, 14);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(136, 119);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -686,9 +686,9 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(212)))), ((int)(((byte)(49)))));
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(239, 14);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(145, 5);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(473, 119);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(580, 141);
             this.guna2HtmlLabel1.TabIndex = 27;
             this.guna2HtmlLabel1.Text = "Editar inventario";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -770,6 +770,7 @@
             this.Name = "FormInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInventario";
+            this.Load += new System.EventHandler(this.FormInventario_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.panel_agregar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
