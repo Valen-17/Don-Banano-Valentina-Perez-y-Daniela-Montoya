@@ -408,6 +408,7 @@
             this.btn_Inventario.TabIndex = 21;
             this.btn_Inventario.Text = "Inventario";
             this.btn_Inventario.UseTransparentBackground = true;
+            this.btn_Inventario.Click += new System.EventHandler(this.btn_Inventario_Click);
             // 
             // guna2Shapes2
             // 
