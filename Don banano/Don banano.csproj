@@ -95,6 +95,7 @@
       <DependentUpon>FormVendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventario.cs" />
+    <Compile Include="Pedido.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

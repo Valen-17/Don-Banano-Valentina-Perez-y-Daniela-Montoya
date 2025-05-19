@@ -31,16 +31,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_crearpedido = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_cerrarR = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.listViewProductos = new System.Windows.Forms.ListView();
+            this.Producto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Estado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Sucursal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmbSucursal = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtDireccion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNombreCliente = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCrear = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_cerrarcancelarpedido = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Shapes8 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.listView2 = new System.Windows.Forms.ListView();
@@ -59,16 +69,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.Producto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Estado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Sucursal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btn_cerrarR = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.btn_cerrarcancelarpedido = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Shapes8 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Panel1.SuspendLayout();
             this.panel_crearpedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -81,7 +81,6 @@
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Panel1.Controls.Add(this.panel_crearpedido);
             this.guna2Panel1.Controls.Add(this.guna2Panel4);
             this.guna2Panel1.Controls.Add(this.guna2Button7);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
@@ -102,63 +101,164 @@
             this.panel_crearpedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
             this.panel_crearpedido.Controls.Add(this.btn_cerrarR);
             this.panel_crearpedido.Controls.Add(this.guna2Shapes7);
-            this.panel_crearpedido.Controls.Add(this.listView1);
-            this.panel_crearpedido.Controls.Add(this.guna2ComboBox1);
+            this.panel_crearpedido.Controls.Add(this.listViewProductos);
+            this.panel_crearpedido.Controls.Add(this.cmbSucursal);
             this.panel_crearpedido.Controls.Add(this.guna2HtmlLabel3);
-            this.panel_crearpedido.Controls.Add(this.guna2TextBox3);
-            this.panel_crearpedido.Controls.Add(this.guna2TextBox2);
+            this.panel_crearpedido.Controls.Add(this.txtDireccion);
+            this.panel_crearpedido.Controls.Add(this.txtNombreCliente);
             this.panel_crearpedido.Controls.Add(this.guna2HtmlLabel7);
             this.panel_crearpedido.Controls.Add(this.guna2HtmlLabel6);
-            this.panel_crearpedido.Controls.Add(this.guna2Button9);
+            this.panel_crearpedido.Controls.Add(this.btnCrear);
             this.panel_crearpedido.Controls.Add(this.guna2Shapes2);
             this.panel_crearpedido.Controls.Add(this.guna2HtmlLabel2);
             this.panel_crearpedido.Controls.Add(this.guna2Shapes6);
             this.panel_crearpedido.Controls.Add(this.guna2PictureBox2);
-            this.panel_crearpedido.Location = new System.Drawing.Point(802, 11);
+            this.panel_crearpedido.Location = new System.Drawing.Point(63, 2);
             this.panel_crearpedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_crearpedido.Name = "panel_crearpedido";
             this.panel_crearpedido.Size = new System.Drawing.Size(642, 694);
             this.panel_crearpedido.TabIndex = 16;
             // 
-            // guna2TextBox3
+            // btn_cerrarR
             // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(255, 311);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox3.PlaceholderText = "Ingresa la dirección del cliente";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(286, 36);
-            this.guna2TextBox3.TabIndex = 23;
+            this.btn_cerrarR.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cerrarR.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
+            this.btn_cerrarR.BorderThickness = 2;
+            this.btn_cerrarR.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarR.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarR.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cerrarR.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cerrarR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
+            this.btn_cerrarR.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_cerrarR.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrarR.Location = new System.Drawing.Point(596, 0);
+            this.btn_cerrarR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cerrarR.Name = "btn_cerrarR";
+            this.btn_cerrarR.Size = new System.Drawing.Size(46, 41);
+            this.btn_cerrarR.TabIndex = 27;
+            this.btn_cerrarR.Text = "X";
+            this.btn_cerrarR.UseTransparentBackground = true;
             // 
-            // guna2TextBox2
+            // guna2Shapes7
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(255, 245);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.PlaceholderText = "Ingresa el nombre de tu cliente";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(286, 36);
-            this.guna2TextBox2.TabIndex = 22;
+            this.guna2Shapes7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes7.BorderColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes7.FillColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes7.Location = new System.Drawing.Point(2, 0);
+            this.guna2Shapes7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Shapes7.Name = "guna2Shapes7";
+            this.guna2Shapes7.PolygonSkip = 1;
+            this.guna2Shapes7.Rotate = 0F;
+            this.guna2Shapes7.RoundedRadius = 30;
+            this.guna2Shapes7.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+            this.guna2Shapes7.Size = new System.Drawing.Size(642, 41);
+            this.guna2Shapes7.TabIndex = 28;
+            this.guna2Shapes7.Text = "guna2Shapes7";
+            this.guna2Shapes7.UseTransparentBackground = true;
+            this.guna2Shapes7.Zoom = 100;
+            // 
+            // listViewProductos
+            // 
+            this.listViewProductos.BackColor = System.Drawing.Color.LemonChiffon;
+            this.listViewProductos.CheckBoxes = true;
+            this.listViewProductos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Producto,
+            this.Estado,
+            this.Sucursal});
+            this.listViewProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewProductos.HideSelection = false;
+            this.listViewProductos.Location = new System.Drawing.Point(99, 430);
+            this.listViewProductos.Name = "listViewProductos";
+            this.listViewProductos.Size = new System.Drawing.Size(440, 143);
+            this.listViewProductos.TabIndex = 26;
+            this.listViewProductos.UseCompatibleStateImageBehavior = false;
+            this.listViewProductos.View = System.Windows.Forms.View.Details;
+            // 
+            // Producto
+            // 
+            this.Producto.Text = "Producto";
+            this.Producto.Width = 140;
+            // 
+            // Estado
+            // 
+            this.Estado.Text = "Estado";
+            this.Estado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Estado.Width = 140;
+            // 
+            // Sucursal
+            // 
+            this.Sucursal.Text = "Sucursal";
+            this.Sucursal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Sucursal.Width = 140;
+            // 
+            // cmbSucursal
+            // 
+            this.cmbSucursal.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSucursal.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSucursal.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbSucursal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbSucursal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSucursal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSucursal.ItemHeight = 30;
+            this.cmbSucursal.Items.AddRange(new object[] {
+            "0. Selecciona la sucursal"});
+            this.cmbSucursal.Location = new System.Drawing.Point(255, 374);
+            this.cmbSucursal.Name = "cmbSucursal";
+            this.cmbSucursal.Size = new System.Drawing.Size(286, 36);
+            this.cmbSucursal.StartIndex = 0;
+            this.cmbSucursal.TabIndex = 25;
+            this.cmbSucursal.SelectedIndexChanged += new System.EventHandler(this.cmbSucursal_SelectedIndexChanged);
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(194)))), ((int)(((byte)(3)))));
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(101, 380);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(78, 30);
+            this.guna2HtmlLabel3.TabIndex = 24;
+            this.guna2HtmlLabel3.Text = "Sucursal";
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDireccion.DefaultText = "";
+            this.txtDireccion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDireccion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDireccion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDireccion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDireccion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDireccion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDireccion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDireccion.Location = new System.Drawing.Point(255, 311);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtDireccion.PlaceholderText = "Ingresa la dirección del cliente";
+            this.txtDireccion.SelectedText = "";
+            this.txtDireccion.Size = new System.Drawing.Size(286, 36);
+            this.txtDireccion.TabIndex = 23;
+            // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreCliente.DefaultText = "";
+            this.txtNombreCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreCliente.Location = new System.Drawing.Point(255, 245);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtNombreCliente.PlaceholderText = "Ingresa el nombre de tu cliente";
+            this.txtNombreCliente.SelectedText = "";
+            this.txtNombreCliente.Size = new System.Drawing.Size(286, 36);
+            this.txtNombreCliente.TabIndex = 22;
             // 
             // guna2HtmlLabel7
             // 
@@ -180,23 +280,24 @@
             this.guna2HtmlLabel6.TabIndex = 18;
             this.guna2HtmlLabel6.Text = "Nombre Cliente";
             // 
-            // guna2Button9
+            // btnCrear
             // 
-            this.guna2Button9.BorderRadius = 10;
-            this.guna2Button9.BorderThickness = 2;
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.FillColor = System.Drawing.Color.OliveDrab;
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button9.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button9.Location = new System.Drawing.Point(192, 612);
-            this.guna2Button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(264, 61);
-            this.guna2Button9.TabIndex = 15;
-            this.guna2Button9.Text = "Crear";
+            this.btnCrear.BorderRadius = 10;
+            this.btnCrear.BorderThickness = 2;
+            this.btnCrear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCrear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCrear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCrear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCrear.FillColor = System.Drawing.Color.OliveDrab;
+            this.btnCrear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCrear.ForeColor = System.Drawing.Color.Black;
+            this.btnCrear.Location = new System.Drawing.Point(192, 612);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(264, 61);
+            this.btnCrear.TabIndex = 15;
+            this.btnCrear.Text = "Crear";
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // guna2Shapes2
             // 
@@ -261,6 +362,7 @@
             // guna2Panel4
             // 
             this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
+            this.guna2Panel4.Controls.Add(this.panel_crearpedido);
             this.guna2Panel4.Controls.Add(this.btn_cerrarcancelarpedido);
             this.guna2Panel4.Controls.Add(this.guna2Shapes8);
             this.guna2Panel4.Controls.Add(this.guna2Button6);
@@ -274,6 +376,44 @@
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(642, 694);
             this.guna2Panel4.TabIndex = 14;
+            // 
+            // btn_cerrarcancelarpedido
+            // 
+            this.btn_cerrarcancelarpedido.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cerrarcancelarpedido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
+            this.btn_cerrarcancelarpedido.BorderThickness = 2;
+            this.btn_cerrarcancelarpedido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarcancelarpedido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarcancelarpedido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cerrarcancelarpedido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cerrarcancelarpedido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
+            this.btn_cerrarcancelarpedido.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_cerrarcancelarpedido.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrarcancelarpedido.Location = new System.Drawing.Point(595, 1);
+            this.btn_cerrarcancelarpedido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cerrarcancelarpedido.Name = "btn_cerrarcancelarpedido";
+            this.btn_cerrarcancelarpedido.Size = new System.Drawing.Size(46, 41);
+            this.btn_cerrarcancelarpedido.TabIndex = 29;
+            this.btn_cerrarcancelarpedido.Text = "X";
+            this.btn_cerrarcancelarpedido.UseTransparentBackground = true;
+            // 
+            // guna2Shapes8
+            // 
+            this.guna2Shapes8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes8.BorderColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes8.FillColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes8.Location = new System.Drawing.Point(1, 1);
+            this.guna2Shapes8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Shapes8.Name = "guna2Shapes8";
+            this.guna2Shapes8.PolygonSkip = 1;
+            this.guna2Shapes8.Rotate = 0F;
+            this.guna2Shapes8.RoundedRadius = 30;
+            this.guna2Shapes8.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+            this.guna2Shapes8.Size = new System.Drawing.Size(642, 41);
+            this.guna2Shapes8.TabIndex = 30;
+            this.guna2Shapes8.Text = "guna2Shapes8";
+            this.guna2Shapes8.UseTransparentBackground = true;
+            this.guna2Shapes8.Zoom = 100;
             // 
             // guna2Button6
             // 
@@ -520,144 +660,6 @@
             this.guna2Shapes4.UseTransparentBackground = true;
             this.guna2Shapes4.Zoom = 80;
             // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(194)))), ((int)(((byte)(3)))));
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(101, 380);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(78, 30);
-            this.guna2HtmlLabel3.TabIndex = 24;
-            this.guna2HtmlLabel3.Text = "Sucursal";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "0. Selecciona la sucursal"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(255, 374);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(286, 36);
-            this.guna2ComboBox1.StartIndex = 0;
-            this.guna2ComboBox1.TabIndex = 25;
-            // 
-            // listView1
-            // 
-            this.listView1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.listView1.CheckBoxes = true;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Producto,
-            this.Estado,
-            this.Sucursal});
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(99, 430);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(440, 143);
-            this.listView1.TabIndex = 26;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // Producto
-            // 
-            this.Producto.Text = "Producto";
-            this.Producto.Width = 140;
-            // 
-            // Estado
-            // 
-            this.Estado.Text = "Estado";
-            this.Estado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Estado.Width = 140;
-            // 
-            // Sucursal
-            // 
-            this.Sucursal.Text = "Sucursal";
-            this.Sucursal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Sucursal.Width = 140;
-            // 
-            // btn_cerrarR
-            // 
-            this.btn_cerrarR.BackColor = System.Drawing.Color.Transparent;
-            this.btn_cerrarR.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
-            this.btn_cerrarR.BorderThickness = 2;
-            this.btn_cerrarR.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cerrarR.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cerrarR.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cerrarR.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_cerrarR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
-            this.btn_cerrarR.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_cerrarR.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrarR.Location = new System.Drawing.Point(596, 0);
-            this.btn_cerrarR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_cerrarR.Name = "btn_cerrarR";
-            this.btn_cerrarR.Size = new System.Drawing.Size(46, 41);
-            this.btn_cerrarR.TabIndex = 27;
-            this.btn_cerrarR.Text = "X";
-            this.btn_cerrarR.UseTransparentBackground = true;
-            // 
-            // guna2Shapes7
-            // 
-            this.guna2Shapes7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes7.BorderColor = System.Drawing.Color.LemonChiffon;
-            this.guna2Shapes7.FillColor = System.Drawing.Color.LemonChiffon;
-            this.guna2Shapes7.Location = new System.Drawing.Point(2, 0);
-            this.guna2Shapes7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Shapes7.Name = "guna2Shapes7";
-            this.guna2Shapes7.PolygonSkip = 1;
-            this.guna2Shapes7.Rotate = 0F;
-            this.guna2Shapes7.RoundedRadius = 30;
-            this.guna2Shapes7.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes7.Size = new System.Drawing.Size(642, 41);
-            this.guna2Shapes7.TabIndex = 28;
-            this.guna2Shapes7.Text = "guna2Shapes7";
-            this.guna2Shapes7.UseTransparentBackground = true;
-            this.guna2Shapes7.Zoom = 100;
-            // 
-            // btn_cerrarcancelarpedido
-            // 
-            this.btn_cerrarcancelarpedido.BackColor = System.Drawing.Color.Transparent;
-            this.btn_cerrarcancelarpedido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
-            this.btn_cerrarcancelarpedido.BorderThickness = 2;
-            this.btn_cerrarcancelarpedido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cerrarcancelarpedido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cerrarcancelarpedido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cerrarcancelarpedido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_cerrarcancelarpedido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
-            this.btn_cerrarcancelarpedido.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_cerrarcancelarpedido.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrarcancelarpedido.Location = new System.Drawing.Point(595, 1);
-            this.btn_cerrarcancelarpedido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_cerrarcancelarpedido.Name = "btn_cerrarcancelarpedido";
-            this.btn_cerrarcancelarpedido.Size = new System.Drawing.Size(46, 41);
-            this.btn_cerrarcancelarpedido.TabIndex = 29;
-            this.btn_cerrarcancelarpedido.Text = "X";
-            this.btn_cerrarcancelarpedido.UseTransparentBackground = true;
-            // 
-            // guna2Shapes8
-            // 
-            this.guna2Shapes8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes8.BorderColor = System.Drawing.Color.LemonChiffon;
-            this.guna2Shapes8.FillColor = System.Drawing.Color.LemonChiffon;
-            this.guna2Shapes8.Location = new System.Drawing.Point(1, 1);
-            this.guna2Shapes8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Shapes8.Name = "guna2Shapes8";
-            this.guna2Shapes8.PolygonSkip = 1;
-            this.guna2Shapes8.Rotate = 0F;
-            this.guna2Shapes8.RoundedRadius = 30;
-            this.guna2Shapes8.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes8.Size = new System.Drawing.Size(642, 41);
-            this.guna2Shapes8.TabIndex = 30;
-            this.guna2Shapes8.Text = "guna2Shapes8";
-            this.guna2Shapes8.UseTransparentBackground = true;
-            this.guna2Shapes8.Zoom = 100;
-            // 
             // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -701,18 +703,18 @@
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes5;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes4;
         private Guna.UI2.WinForms.Guna2Panel panel_crearpedido;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtDireccion;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombreCliente;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
+        private Guna.UI2.WinForms.Guna2Button btnCrear;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSucursal;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewProductos;
         private System.Windows.Forms.ColumnHeader Producto;
         private System.Windows.Forms.ColumnHeader Estado;
         private System.Windows.Forms.ColumnHeader Sucursal;
