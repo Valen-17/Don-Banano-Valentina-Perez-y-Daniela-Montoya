@@ -12,6 +12,9 @@ namespace Don_banano
 {
     public partial class FormRepartidor : Form
     {
+        private List<Pedido> entregasPendientes = new List<Pedido>();
+        private Queue<Pedido> colaEntregas = new Queue<Pedido>();
+
         public FormRepartidor()
         {
             InitializeComponent();
@@ -24,13 +27,13 @@ namespace Don_banano
             panel1_repartidor.Location = new Point(x, y);
             panel1_repartidor.Visible = true;
             panel1_repartidor.BringToFront();
-        }
+        }//Abrir panel
 
         private void guna2Button11_Click(object sender, EventArgs e)
         {
             panel1_repartidor.Visible = false;
             panel1_repartidor.SendToBack();
-        }
+        }//Cerrar panel
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
@@ -45,7 +48,7 @@ namespace Don_banano
         {
             panel2_completadas.Visible = false;
             panel2_completadas.SendToBack();
-        }
+        }//Cerrar panel
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
@@ -60,13 +63,90 @@ namespace Don_banano
         {
             panel3_actual.Visible = false;
             panel3_actual.SendToBack();
-        }
+        }//Cerrar panel
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
-            form1.Show();   
+            form1.Show();
             this.Hide();
+        }//Cerrar sesión
+
+        private void MostrarSiguienteEntrega()
+        {
+            lvEntregaActual.Items.Clear(); 
+
+            if (colaEntregas.Count > 0)
+            {
+                Pedido siguiente = colaEntregas.Peek();
+
+                ListViewItem item = new ListViewItem(siguiente.Orden.ToString());
+                item.SubItems.Add(siguiente.Cliente);
+                item.SubItems.Add(siguiente.Direccion);
+                item.SubItems.Add(siguiente.Productos);
+
+                lvEntregaActual.Items.Add(item);
+            }
+            else
+            {
+                ListViewItem vacio = new ListViewItem("Sin pedidos pendientes");
+                lvEntregaActual.Items.Add(vacio);
+            }
+
+            if (colaEntregas.Count > 0)
+            {
+                MostrarSiguienteEntrega();
+            }
         }
+
+        private void btnSiguienteEntrega_Click(object sender, EventArgs e)
+        {
+            if (colaEntregas.Count > 0)
+            {
+                colaEntregas.Dequeue(); // eliminar la entrega actual
+                MostrarSiguienteEntrega();
+            }
+        }
+
+
+        private void btnPedidoEntregado_Click(object sender, EventArgs e)
+        {
+            if (colaEntregas.Count > 0)
+            {
+                Pedido entregaFinalizada = colaEntregas.Dequeue();
+
+                ListViewItem fila = new ListViewItem(entregaFinalizada.Orden.ToString());
+                fila.SubItems.Add(entregaFinalizada.Cliente);
+                fila.SubItems.Add(entregaFinalizada.Direccion);
+                fila.SubItems.Add(entregaFinalizada.Productos);
+                listViewCompletadas.Items.Add(fila);
+
+                MostrarSiguienteEntrega();
+            }
+        }
+
+        private void btnEliminarEntrega_Click(object sender, EventArgs e)
+        {
+            if (listViewCompletadas.SelectedItems.Count > 0)
+            {
+                listViewCompletadas.Items.Remove(listViewCompletadas.SelectedItems[0]);
+            }
+            else
+            {
+                MessageBox.Show("Selecciona una entrega para eliminar", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        public void AgregarPedidoAPendientes(Pedido pedido)
+        {
+            ListViewItem item = new ListViewItem(pedido.Orden.ToString());
+            item.SubItems.Add(pedido.Cliente);
+            item.SubItems.Add(pedido.Direccion);
+            item.SubItems.Add(pedido.Productos);
+            item.SubItems.Add(pedido.Sucursal);
+            item.SubItems.Add(pedido.HoraCreacion.ToString("HH:mm:ss"));
+
+            listViewPendientes.Items.Add(item);
+        }
+
     }
 }

@@ -37,7 +37,7 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes9 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.listView3 = new System.Windows.Forms.ListView();
+            this.listViewPendientes = new System.Windows.Forms.ListView();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -48,24 +48,11 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel3_actual = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_cerrarR = new Guna.UI2.WinForms.Guna2Button();
-            this.panel2_completadas = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Shapes11 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Shapes10 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.btnPedidoEntregado = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEliminarEntrega = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSiguienteEntrega = new Guna.UI2.WinForms.Guna2Button();
+            this.lvEntregaActual = new System.Windows.Forms.ListView();
             this.Cliente = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Dirección = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Productos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -74,6 +61,19 @@
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes3 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel2_completadas = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Shapes11 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
+            this.listViewCompletadas = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -87,9 +87,9 @@
             this.panel1_repartidor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.panel3_actual.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.panel2_completadas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +97,6 @@
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Panel1.Controls.Add(this.panel1_repartidor);
             this.guna2Panel1.Controls.Add(this.panel3_actual);
             this.guna2Panel1.Controls.Add(this.panel2_completadas);
             this.guna2Panel1.Controls.Add(this.guna2Button7);
@@ -125,12 +124,12 @@
             this.panel1_repartidor.Controls.Add(this.guna2HtmlLabel4);
             this.panel1_repartidor.Controls.Add(this.guna2Shapes9);
             this.panel1_repartidor.Controls.Add(this.guna2Button8);
-            this.panel1_repartidor.Controls.Add(this.listView3);
+            this.panel1_repartidor.Controls.Add(this.listViewPendientes);
             this.panel1_repartidor.Controls.Add(this.guna2Shapes7);
             this.panel1_repartidor.Controls.Add(this.guna2HtmlLabel3);
             this.panel1_repartidor.Controls.Add(this.guna2Shapes8);
             this.panel1_repartidor.Controls.Add(this.guna2PictureBox3);
-            this.panel1_repartidor.Location = new System.Drawing.Point(789, 35);
+            this.panel1_repartidor.Location = new System.Drawing.Point(44, 15);
             this.panel1_repartidor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1_repartidor.Name = "panel1_repartidor";
             this.panel1_repartidor.Size = new System.Drawing.Size(642, 694);
@@ -234,24 +233,24 @@
             this.guna2Button8.TabIndex = 15;
             this.guna2Button8.Text = "Eliminar entrega";
             // 
-            // listView3
+            // listViewPendientes
             // 
-            this.listView3.BackColor = System.Drawing.Color.LemonChiffon;
-            this.listView3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewPendientes.BackColor = System.Drawing.Color.LemonChiffon;
+            this.listViewPendientes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listViewPendientes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8});
-            this.listView3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(102, 248);
-            this.listView3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(433, 207);
-            this.listView3.TabIndex = 7;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.Details;
+            this.listViewPendientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewPendientes.HideSelection = false;
+            this.listViewPendientes.Location = new System.Drawing.Point(102, 248);
+            this.listViewPendientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listViewPendientes.Name = "listViewPendientes";
+            this.listViewPendientes.Size = new System.Drawing.Size(433, 207);
+            this.listViewPendientes.TabIndex = 7;
+            this.listViewPendientes.UseCompatibleStateImageBehavior = false;
+            this.listViewPendientes.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader5
             // 
@@ -339,17 +338,18 @@
             // panel3_actual
             // 
             this.panel3_actual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
+            this.panel3_actual.Controls.Add(this.panel1_repartidor);
             this.panel3_actual.Controls.Add(this.btn_cerrarR);
             this.panel3_actual.Controls.Add(this.guna2Shapes10);
-            this.panel3_actual.Controls.Add(this.guna2Button6);
-            this.panel3_actual.Controls.Add(this.guna2Button5);
-            this.panel3_actual.Controls.Add(this.guna2Button4);
-            this.panel3_actual.Controls.Add(this.listView2);
+            this.panel3_actual.Controls.Add(this.btnPedidoEntregado);
+            this.panel3_actual.Controls.Add(this.btnEliminarEntrega);
+            this.panel3_actual.Controls.Add(this.btnSiguienteEntrega);
+            this.panel3_actual.Controls.Add(this.lvEntregaActual);
             this.panel3_actual.Controls.Add(this.guna2Shapes1);
             this.panel3_actual.Controls.Add(this.guna2HtmlLabel12);
             this.panel3_actual.Controls.Add(this.guna2Shapes3);
             this.panel3_actual.Controls.Add(this.guna2PictureBox4);
-            this.panel3_actual.Location = new System.Drawing.Point(56, 56);
+            this.panel3_actual.Location = new System.Drawing.Point(69, 56);
             this.panel3_actual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3_actual.Name = "panel3_actual";
             this.panel3_actual.Size = new System.Drawing.Size(642, 694);
@@ -376,183 +376,6 @@
             this.btn_cerrarR.UseTransparentBackground = true;
             this.btn_cerrarR.Click += new System.EventHandler(this.btn_cerrarR_Click);
             // 
-            // panel2_completadas
-            // 
-            this.panel2_completadas.AutoScroll = true;
-            this.panel2_completadas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
-            this.panel2_completadas.Controls.Add(this.guna2Button10);
-            this.panel2_completadas.Controls.Add(this.guna2Shapes11);
-            this.panel2_completadas.Controls.Add(this.guna2Button9);
-            this.panel2_completadas.Controls.Add(this.listView1);
-            this.panel2_completadas.Controls.Add(this.guna2Shapes2);
-            this.panel2_completadas.Controls.Add(this.guna2HtmlLabel2);
-            this.panel2_completadas.Controls.Add(this.guna2Shapes6);
-            this.panel2_completadas.Controls.Add(this.guna2PictureBox2);
-            this.panel2_completadas.Location = new System.Drawing.Point(812, 11);
-            this.panel2_completadas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2_completadas.Name = "panel2_completadas";
-            this.panel2_completadas.Size = new System.Drawing.Size(642, 694);
-            this.panel2_completadas.TabIndex = 15;
-            // 
-            // guna2Button10
-            // 
-            this.guna2Button10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
-            this.guna2Button10.BorderThickness = 2;
-            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button10.ForeColor = System.Drawing.Color.White;
-            this.guna2Button10.Location = new System.Drawing.Point(594, 0);
-            this.guna2Button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.Size = new System.Drawing.Size(46, 41);
-            this.guna2Button10.TabIndex = 19;
-            this.guna2Button10.Text = "X";
-            this.guna2Button10.UseTransparentBackground = true;
-            this.guna2Button10.Click += new System.EventHandler(this.guna2Button10_Click);
-            // 
-            // guna2Shapes11
-            // 
-            this.guna2Shapes11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes11.BorderColor = System.Drawing.Color.LemonChiffon;
-            this.guna2Shapes11.FillColor = System.Drawing.Color.LemonChiffon;
-            this.guna2Shapes11.Location = new System.Drawing.Point(0, 0);
-            this.guna2Shapes11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Shapes11.Name = "guna2Shapes11";
-            this.guna2Shapes11.PolygonSkip = 1;
-            this.guna2Shapes11.Rotate = 0F;
-            this.guna2Shapes11.RoundedRadius = 30;
-            this.guna2Shapes11.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes11.Size = new System.Drawing.Size(642, 41);
-            this.guna2Shapes11.TabIndex = 20;
-            this.guna2Shapes11.Text = "guna2Shapes11";
-            this.guna2Shapes11.UseTransparentBackground = true;
-            this.guna2Shapes11.Zoom = 100;
-            // 
-            // guna2Button9
-            // 
-            this.guna2Button9.BorderRadius = 10;
-            this.guna2Button9.BorderThickness = 2;
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.FillColor = System.Drawing.Color.OrangeRed;
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button9.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button9.Location = new System.Drawing.Point(192, 612);
-            this.guna2Button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(264, 61);
-            this.guna2Button9.TabIndex = 15;
-            this.guna2Button9.Text = "Eliminar entrega";
-            // 
-            // listView1
-            // 
-            this.listView1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(110, 250);
-            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(422, 324);
-            this.listView1.TabIndex = 7;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.DisplayIndex = 1;
-            this.columnHeader1.Text = "Cliente";
-            this.columnHeader1.Width = 100;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.DisplayIndex = 2;
-            this.columnHeader2.Text = "Dirección";
-            this.columnHeader2.Width = 100;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.DisplayIndex = 3;
-            this.columnHeader3.Text = "Productos";
-            this.columnHeader3.Width = 100;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.DisplayIndex = 0;
-            this.columnHeader4.Text = "Orden";
-            this.columnHeader4.Width = 100;
-            // 
-            // guna2Shapes2
-            // 
-            this.guna2Shapes2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes2.BorderColor = System.Drawing.Color.Black;
-            this.guna2Shapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(194)))), ((int)(((byte)(3)))));
-            this.guna2Shapes2.Location = new System.Drawing.Point(21, 189);
-            this.guna2Shapes2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Shapes2.Name = "guna2Shapes2";
-            this.guna2Shapes2.PolygonSkip = 1;
-            this.guna2Shapes2.Rotate = 0F;
-            this.guna2Shapes2.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
-            this.guna2Shapes2.Size = new System.Drawing.Size(598, 451);
-            this.guna2Shapes2.TabIndex = 8;
-            this.guna2Shapes2.Text = "guna2Shapes2";
-            this.guna2Shapes2.UseTransparentBackground = true;
-            this.guna2Shapes2.Zoom = 80;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(142, 152);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(371, 50);
-            this.guna2HtmlLabel2.TabIndex = 4;
-            this.guna2HtmlLabel2.Text = "Entregas completadas";
-            // 
-            // guna2Shapes6
-            // 
-            this.guna2Shapes6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes6.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
-            this.guna2Shapes6.Location = new System.Drawing.Point(0, 148);
-            this.guna2Shapes6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Shapes6.Name = "guna2Shapes6";
-            this.guna2Shapes6.PolygonSkip = 1;
-            this.guna2Shapes6.Rotate = 0F;
-            this.guna2Shapes6.RoundedRadius = 30;
-            this.guna2Shapes6.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.guna2Shapes6.Size = new System.Drawing.Size(642, 65);
-            this.guna2Shapes6.TabIndex = 2;
-            this.guna2Shapes6.Text = "guna2Shapes6";
-            this.guna2Shapes6.UseTransparentBackground = true;
-            this.guna2Shapes6.Zoom = 100;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(642, 164);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 0;
-            this.guna2PictureBox2.TabStop = false;
-            // 
             // guna2Shapes10
             // 
             this.guna2Shapes10.BackColor = System.Drawing.Color.Transparent;
@@ -571,78 +394,81 @@
             this.guna2Shapes10.UseTransparentBackground = true;
             this.guna2Shapes10.Zoom = 100;
             // 
-            // guna2Button6
+            // btnPedidoEntregado
             // 
-            this.guna2Button6.BorderRadius = 10;
-            this.guna2Button6.BorderThickness = 2;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(194)))), ((int)(((byte)(3)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button6.Location = new System.Drawing.Point(375, 492);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(186, 61);
-            this.guna2Button6.TabIndex = 16;
-            this.guna2Button6.Text = "Pedido entregado";
+            this.btnPedidoEntregado.BorderRadius = 10;
+            this.btnPedidoEntregado.BorderThickness = 2;
+            this.btnPedidoEntregado.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPedidoEntregado.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPedidoEntregado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPedidoEntregado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPedidoEntregado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(194)))), ((int)(((byte)(3)))));
+            this.btnPedidoEntregado.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnPedidoEntregado.ForeColor = System.Drawing.Color.Black;
+            this.btnPedidoEntregado.Location = new System.Drawing.Point(375, 492);
+            this.btnPedidoEntregado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPedidoEntregado.Name = "btnPedidoEntregado";
+            this.btnPedidoEntregado.Size = new System.Drawing.Size(186, 61);
+            this.btnPedidoEntregado.TabIndex = 16;
+            this.btnPedidoEntregado.Text = "Pedido entregado";
+            this.btnPedidoEntregado.Click += new System.EventHandler(this.btnPedidoEntregado_Click);
             // 
-            // guna2Button5
+            // btnEliminarEntrega
             // 
-            this.guna2Button5.BorderRadius = 10;
-            this.guna2Button5.BorderThickness = 2;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.OrangeRed;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.Location = new System.Drawing.Point(86, 492);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(186, 61);
-            this.guna2Button5.TabIndex = 15;
-            this.guna2Button5.Text = "Cancelar entrega";
+            this.btnEliminarEntrega.BorderRadius = 10;
+            this.btnEliminarEntrega.BorderThickness = 2;
+            this.btnEliminarEntrega.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminarEntrega.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminarEntrega.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEliminarEntrega.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEliminarEntrega.FillColor = System.Drawing.Color.OrangeRed;
+            this.btnEliminarEntrega.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnEliminarEntrega.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminarEntrega.Location = new System.Drawing.Point(86, 492);
+            this.btnEliminarEntrega.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminarEntrega.Name = "btnEliminarEntrega";
+            this.btnEliminarEntrega.Size = new System.Drawing.Size(186, 61);
+            this.btnEliminarEntrega.TabIndex = 15;
+            this.btnEliminarEntrega.Text = "Cancelar entrega";
+            this.btnEliminarEntrega.Click += new System.EventHandler(this.btnEliminarEntrega_Click);
             // 
-            // guna2Button4
+            // btnSiguienteEntrega
             // 
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.BorderThickness = 2;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.OliveDrab;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.Location = new System.Drawing.Point(154, 595);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(327, 61);
-            this.guna2Button4.TabIndex = 14;
-            this.guna2Button4.Text = "Iniciar Siguiente Entrega --->";
+            this.btnSiguienteEntrega.BorderRadius = 10;
+            this.btnSiguienteEntrega.BorderThickness = 2;
+            this.btnSiguienteEntrega.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSiguienteEntrega.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSiguienteEntrega.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSiguienteEntrega.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSiguienteEntrega.FillColor = System.Drawing.Color.OliveDrab;
+            this.btnSiguienteEntrega.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSiguienteEntrega.ForeColor = System.Drawing.Color.Black;
+            this.btnSiguienteEntrega.Location = new System.Drawing.Point(154, 595);
+            this.btnSiguienteEntrega.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSiguienteEntrega.Name = "btnSiguienteEntrega";
+            this.btnSiguienteEntrega.Size = new System.Drawing.Size(327, 61);
+            this.btnSiguienteEntrega.TabIndex = 14;
+            this.btnSiguienteEntrega.Text = "Iniciar Siguiente Entrega --->";
+            this.btnSiguienteEntrega.Click += new System.EventHandler(this.btnSiguienteEntrega_Click);
             // 
-            // listView2
+            // lvEntregaActual
             // 
-            this.listView2.BackColor = System.Drawing.Color.LemonChiffon;
-            this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvEntregaActual.BackColor = System.Drawing.Color.LemonChiffon;
+            this.lvEntregaActual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lvEntregaActual.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Cliente,
             this.Dirección,
             this.Productos,
             this.Orden});
-            this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(109, 285);
-            this.listView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(422, 136);
-            this.listView2.TabIndex = 7;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
+            this.lvEntregaActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvEntregaActual.HideSelection = false;
+            this.lvEntregaActual.Location = new System.Drawing.Point(109, 285);
+            this.lvEntregaActual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lvEntregaActual.Name = "lvEntregaActual";
+            this.lvEntregaActual.Size = new System.Drawing.Size(422, 136);
+            this.lvEntregaActual.TabIndex = 7;
+            this.lvEntregaActual.UseCompatibleStateImageBehavior = false;
+            this.lvEntregaActual.View = System.Windows.Forms.View.Details;
             // 
             // Cliente
             // 
@@ -726,6 +552,183 @@
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox4.TabIndex = 0;
             this.guna2PictureBox4.TabStop = false;
+            // 
+            // panel2_completadas
+            // 
+            this.panel2_completadas.AutoScroll = true;
+            this.panel2_completadas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
+            this.panel2_completadas.Controls.Add(this.guna2Button10);
+            this.panel2_completadas.Controls.Add(this.guna2Shapes11);
+            this.panel2_completadas.Controls.Add(this.guna2Button9);
+            this.panel2_completadas.Controls.Add(this.listViewCompletadas);
+            this.panel2_completadas.Controls.Add(this.guna2Shapes2);
+            this.panel2_completadas.Controls.Add(this.guna2HtmlLabel2);
+            this.panel2_completadas.Controls.Add(this.guna2Shapes6);
+            this.panel2_completadas.Controls.Add(this.guna2PictureBox2);
+            this.panel2_completadas.Location = new System.Drawing.Point(92, 35);
+            this.panel2_completadas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2_completadas.Name = "panel2_completadas";
+            this.panel2_completadas.Size = new System.Drawing.Size(642, 694);
+            this.panel2_completadas.TabIndex = 15;
+            // 
+            // guna2Button10
+            // 
+            this.guna2Button10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
+            this.guna2Button10.BorderThickness = 2;
+            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
+            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.guna2Button10.ForeColor = System.Drawing.Color.White;
+            this.guna2Button10.Location = new System.Drawing.Point(594, 0);
+            this.guna2Button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Button10.Name = "guna2Button10";
+            this.guna2Button10.Size = new System.Drawing.Size(46, 41);
+            this.guna2Button10.TabIndex = 19;
+            this.guna2Button10.Text = "X";
+            this.guna2Button10.UseTransparentBackground = true;
+            this.guna2Button10.Click += new System.EventHandler(this.guna2Button10_Click);
+            // 
+            // guna2Shapes11
+            // 
+            this.guna2Shapes11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes11.BorderColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes11.FillColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes11.Location = new System.Drawing.Point(0, 0);
+            this.guna2Shapes11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Shapes11.Name = "guna2Shapes11";
+            this.guna2Shapes11.PolygonSkip = 1;
+            this.guna2Shapes11.Rotate = 0F;
+            this.guna2Shapes11.RoundedRadius = 30;
+            this.guna2Shapes11.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+            this.guna2Shapes11.Size = new System.Drawing.Size(642, 41);
+            this.guna2Shapes11.TabIndex = 20;
+            this.guna2Shapes11.Text = "guna2Shapes11";
+            this.guna2Shapes11.UseTransparentBackground = true;
+            this.guna2Shapes11.Zoom = 100;
+            // 
+            // guna2Button9
+            // 
+            this.guna2Button9.BorderRadius = 10;
+            this.guna2Button9.BorderThickness = 2;
+            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button9.FillColor = System.Drawing.Color.OrangeRed;
+            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2Button9.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button9.Location = new System.Drawing.Point(192, 612);
+            this.guna2Button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button9.Name = "guna2Button9";
+            this.guna2Button9.Size = new System.Drawing.Size(264, 61);
+            this.guna2Button9.TabIndex = 15;
+            this.guna2Button9.Text = "Eliminar entrega";
+            // 
+            // listViewCompletadas
+            // 
+            this.listViewCompletadas.BackColor = System.Drawing.Color.LemonChiffon;
+            this.listViewCompletadas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listViewCompletadas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listViewCompletadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewCompletadas.HideSelection = false;
+            this.listViewCompletadas.Location = new System.Drawing.Point(110, 250);
+            this.listViewCompletadas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listViewCompletadas.Name = "listViewCompletadas";
+            this.listViewCompletadas.Size = new System.Drawing.Size(422, 324);
+            this.listViewCompletadas.TabIndex = 7;
+            this.listViewCompletadas.UseCompatibleStateImageBehavior = false;
+            this.listViewCompletadas.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.DisplayIndex = 1;
+            this.columnHeader1.Text = "Cliente";
+            this.columnHeader1.Width = 100;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.DisplayIndex = 2;
+            this.columnHeader2.Text = "Dirección";
+            this.columnHeader2.Width = 100;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.DisplayIndex = 3;
+            this.columnHeader3.Text = "Productos";
+            this.columnHeader3.Width = 100;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.DisplayIndex = 0;
+            this.columnHeader4.Text = "Orden";
+            this.columnHeader4.Width = 100;
+            // 
+            // guna2Shapes2
+            // 
+            this.guna2Shapes2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes2.BorderColor = System.Drawing.Color.Black;
+            this.guna2Shapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(194)))), ((int)(((byte)(3)))));
+            this.guna2Shapes2.Location = new System.Drawing.Point(21, 189);
+            this.guna2Shapes2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Shapes2.Name = "guna2Shapes2";
+            this.guna2Shapes2.PolygonSkip = 1;
+            this.guna2Shapes2.Rotate = 0F;
+            this.guna2Shapes2.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
+            this.guna2Shapes2.Size = new System.Drawing.Size(598, 451);
+            this.guna2Shapes2.TabIndex = 8;
+            this.guna2Shapes2.Text = "guna2Shapes2";
+            this.guna2Shapes2.UseTransparentBackground = true;
+            this.guna2Shapes2.Zoom = 80;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(142, 152);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(371, 50);
+            this.guna2HtmlLabel2.TabIndex = 4;
+            this.guna2HtmlLabel2.Text = "Entregas completadas";
+            // 
+            // guna2Shapes6
+            // 
+            this.guna2Shapes6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes6.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
+            this.guna2Shapes6.Location = new System.Drawing.Point(0, 148);
+            this.guna2Shapes6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Shapes6.Name = "guna2Shapes6";
+            this.guna2Shapes6.PolygonSkip = 1;
+            this.guna2Shapes6.Rotate = 0F;
+            this.guna2Shapes6.RoundedRadius = 30;
+            this.guna2Shapes6.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+            this.guna2Shapes6.Size = new System.Drawing.Size(642, 65);
+            this.guna2Shapes6.TabIndex = 2;
+            this.guna2Shapes6.Text = "guna2Shapes6";
+            this.guna2Shapes6.UseTransparentBackground = true;
+            this.guna2Shapes6.Zoom = 100;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(642, 164);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 0;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // guna2Button7
             // 
@@ -894,10 +897,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.panel3_actual.ResumeLayout(false);
             this.panel3_actual.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.panel2_completadas.ResumeLayout(false);
             this.panel2_completadas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -916,7 +919,7 @@
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes5;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes4;
         private Guna.UI2.WinForms.Guna2Panel panel3_actual;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView lvEntregaActual;
         private System.Windows.Forms.ColumnHeader Cliente;
         private System.Windows.Forms.ColumnHeader Dirección;
         private System.Windows.Forms.ColumnHeader Productos;
@@ -925,12 +928,12 @@
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btnEliminarEntrega;
+        private Guna.UI2.WinForms.Guna2Button btnSiguienteEntrega;
+        private Guna.UI2.WinForms.Guna2Button btnPedidoEntregado;
         private Guna.UI2.WinForms.Guna2Panel panel2_completadas;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewCompletadas;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
@@ -942,7 +945,7 @@
         private Guna.UI2.WinForms.Guna2Panel panel1_repartidor;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ListView listViewPendientes;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
