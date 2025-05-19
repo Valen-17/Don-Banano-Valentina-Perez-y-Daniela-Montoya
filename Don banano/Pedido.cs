@@ -14,7 +14,7 @@ namespace Don_banano
         public string Productos { get; set; }
         public string Sucursal { get; set; }
         public DateTime HoraCreacion { get; set; }
-        public Pedido() { }
+        public List<Producto> Producto { get; set; } = new List<Producto>();
 
 
         public Pedido(int orden, string cliente, string direccion, string productos, string sucursal)
