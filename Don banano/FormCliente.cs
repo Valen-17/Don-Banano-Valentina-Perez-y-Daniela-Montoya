@@ -20,15 +20,31 @@ namespace Don_banano
 
         private void FormCliente_Load(object sender, EventArgs e)
         {
-            // Cargar sucursales únicas en el ComboBox
-            var sucursales = Inventario.ListaProductos
-                .Select(p => p.Sucursal)
-                .Distinct()
-                .ToList();
+            // Evitar duplicados usando HashSet
+            HashSet<string> sucursalesUnicas = new HashSet<string>();
 
+            // Recorrer la lista de productos
+            foreach (var producto in Inventario.ListaProductos)
+            {
+                sucursalesUnicas.Add(producto.Sucursal);
+            }
+
+            // Limpiar el ComboBox antes de llenarlo
             cmbSucursal.Items.Clear();
-            cmbSucursal.Items.AddRange(sucursales.ToArray());
+
+            // Agregar un item por defecto
+            cmbSucursal.Items.Add("0. Selecciona la sucursal");
+
+            // Agregar las sucursales únicas
+            foreach (var sucursal in sucursalesUnicas)
+            {
+                cmbSucursal.Items.Add(sucursal);
+            }
+
+            // Seleccionar por defecto el primer ítem
+            cmbSucursal.SelectedIndex = 0;
         }
+
 
         private void cmbSucursal_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -111,6 +127,31 @@ namespace Don_banano
                 item.SubItems.Add(pedido.HoraCreacion.ToString("HH:mm:ss"));
                 listViewProductos.Items.Add(item);
             }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            panel_crearPedido.Visible = true;
+            panel_crearPedido.BringToFront();
+            int x = (this.ClientSize.Width - panel_crearPedido.Width) / 2;
+            int y = (this.ClientSize.Height - panel_crearPedido.Height) / 2;
+            panel_crearPedido.Location = new System.Drawing.Point(x, y);
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            guna2Panel4.Visible = true;
+            guna2Panel4.BringToFront();
+            int x = (this.ClientSize.Width - guna2Panel4.Width) / 2;
+            int y = (this.ClientSize.Height - guna2Panel4.Height) / 2;
+            guna2Panel4.Location = new System.Drawing.Point(x, y);
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
         }
     }
 }
