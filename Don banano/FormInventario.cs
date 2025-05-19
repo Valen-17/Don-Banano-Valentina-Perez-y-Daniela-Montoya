@@ -37,15 +37,14 @@ namespace Don_banano
         }
         private void btn_guardarA_Click(object sender, EventArgs e)
         {
-            string nuevoProducto = txt_producto.Text.Trim();
-            string nuevaSucursal = txt_sucursal.Text.Trim();
-            string nuevaDireccion = txt_direccion.Text.Trim();
-            string textoStock = txt_stock.Text.Trim();
-            string textoPrecio = txt_precio.Text.Trim();
+            string nuevoProducto = txt_productoA.Text.Trim();
+            string nuevaSucursal = txt_sucursalA.Text.Trim();
+            string nuevaDireccion = txt_direccionA.Text.Trim();
+            string textoStock = txt_stockA.Text.Trim();
+            string textoPrecio = txt_precioA.Text.Trim();
 
             // Validar campos vacíos
-            if (string.IsNullOrEmpty(nuevoProducto) || string.IsNullOrEmpty(nuevaSucursal) ||
-                string.IsNullOrEmpty(nuevaDireccion) || string.IsNullOrEmpty(textoStock) || string.IsNullOrEmpty(textoPrecio))
+            if (string.IsNullOrEmpty(nuevoProducto) || string.IsNullOrEmpty(nuevaSucursal) || string.IsNullOrEmpty(nuevaDireccion) || string.IsNullOrEmpty(textoStock) || string.IsNullOrEmpty(textoPrecio))
             {
                 MessageBox.Show("Completa todos los campos.");
                 return;
