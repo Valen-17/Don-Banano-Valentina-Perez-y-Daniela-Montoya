@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_crearpedido = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_cerrarR = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
@@ -48,7 +49,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_cerrarcancelarpedido = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Shapes8 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
@@ -70,9 +70,9 @@
             this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Panel1.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
             this.panel_crearpedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +81,7 @@
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Panel1.Controls.Add(this.panel_crearpedido);
             this.guna2Panel1.Controls.Add(this.guna2Panel4);
             this.guna2Panel1.Controls.Add(this.guna2Button7);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
@@ -95,6 +96,23 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(847, 785);
             this.guna2Panel1.TabIndex = 2;
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
+            this.guna2Panel4.Controls.Add(this.btn_cerrarcancelarpedido);
+            this.guna2Panel4.Controls.Add(this.guna2Shapes8);
+            this.guna2Panel4.Controls.Add(this.guna2Button6);
+            this.guna2Panel4.Controls.Add(this.guna2Button5);
+            this.guna2Panel4.Controls.Add(this.listView2);
+            this.guna2Panel4.Controls.Add(this.guna2Shapes1);
+            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel12);
+            this.guna2Panel4.Controls.Add(this.guna2Shapes3);
+            this.guna2Panel4.Controls.Add(this.guna2PictureBox4);
+            this.guna2Panel4.Location = new System.Drawing.Point(809, 15);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.Size = new System.Drawing.Size(642, 694);
+            this.guna2Panel4.TabIndex = 14;
             // 
             // panel_crearpedido
             // 
@@ -113,7 +131,7 @@
             this.panel_crearpedido.Controls.Add(this.guna2HtmlLabel2);
             this.panel_crearpedido.Controls.Add(this.guna2Shapes6);
             this.panel_crearpedido.Controls.Add(this.guna2PictureBox2);
-            this.panel_crearpedido.Location = new System.Drawing.Point(63, 2);
+            this.panel_crearpedido.Location = new System.Drawing.Point(76, 35);
             this.panel_crearpedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_crearpedido.Name = "panel_crearpedido";
             this.panel_crearpedido.Size = new System.Drawing.Size(642, 694);
@@ -358,24 +376,6 @@
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 0;
             this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
-            this.guna2Panel4.Controls.Add(this.panel_crearpedido);
-            this.guna2Panel4.Controls.Add(this.btn_cerrarcancelarpedido);
-            this.guna2Panel4.Controls.Add(this.guna2Shapes8);
-            this.guna2Panel4.Controls.Add(this.guna2Button6);
-            this.guna2Panel4.Controls.Add(this.guna2Button5);
-            this.guna2Panel4.Controls.Add(this.listView2);
-            this.guna2Panel4.Controls.Add(this.guna2Shapes1);
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel12);
-            this.guna2Panel4.Controls.Add(this.guna2Shapes3);
-            this.guna2Panel4.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel4.Location = new System.Drawing.Point(48, 35);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(642, 694);
-            this.guna2Panel4.TabIndex = 14;
             // 
             // btn_cerrarcancelarpedido
             // 
@@ -670,10 +670,10 @@
             this.Text = "FormCliente";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.guna2Panel4.ResumeLayout(false);
             this.panel_crearpedido.ResumeLayout(false);
             this.panel_crearpedido.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            this.guna2Panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
