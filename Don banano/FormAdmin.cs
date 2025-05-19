@@ -31,5 +31,12 @@ namespace Don_banano
             formPrincipal.Show();
             this.Hide();
         }
+
+        private void btn_Inventario_Click(object sender, EventArgs e)
+        {
+            FormInventario formInventario = new FormInventario();
+            formInventario.Show();
+            this.Hide();
+        }
     }
 }

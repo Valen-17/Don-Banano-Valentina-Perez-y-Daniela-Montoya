@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Don_banano.Form1;
 using Don_banano;
-
 
 namespace Don_banano
 {
@@ -48,7 +52,7 @@ namespace Don_banano
             int y = (this.ClientSize.Height - panel_agregar.Height) / 2;
             panel_agregar.Visible = true;
             panel_agregar.BringToFront();
-            panel_agregar.Location = new System.Drawing.Point(x, y);
+            panel_agregar.Location = new Point(x, y);
 
         }
 
