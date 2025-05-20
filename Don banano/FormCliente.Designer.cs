@@ -30,26 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel_cantidadProductos = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_cerrarCantidadProductos = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Shapes11 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.txt_cantidad = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txt_precio = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btn_finalizarVenta = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_producto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel_crearPedido = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_cerrarR = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_cerrarCrearPedido = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
             this.listViewProductos = new System.Windows.Forms.ListView();
             this.Producto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Estado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Sucursal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Precio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmbSucursal = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtDireccion = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNombreCliente = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnCrear = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_cerrarcancelarpedido = new Guna.UI2.WinForms.Guna2Button();
+            this.panel_CancelarPedido = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_CancelarPedido = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Shapes8 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
@@ -61,18 +70,19 @@
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes3 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_cerrarFormCliente = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.CrearPedido = new Guna.UI2.WinForms.Guna2Button();
+            this.CancelarPedido = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Panel1.SuspendLayout();
+            this.panel_cantidadProductos.SuspendLayout();
             this.panel_crearPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            this.guna2Panel4.SuspendLayout();
+            this.panel_CancelarPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -81,13 +91,14 @@
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Panel1.Controls.Add(this.panel_cantidadProductos);
             this.guna2Panel1.Controls.Add(this.panel_crearPedido);
-            this.guna2Panel1.Controls.Add(this.guna2Panel4);
-            this.guna2Panel1.Controls.Add(this.guna2Button7);
+            this.guna2Panel1.Controls.Add(this.panel_CancelarPedido);
+            this.guna2Panel1.Controls.Add(this.btn_cerrarFormCliente);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.CrearPedido);
+            this.guna2Panel1.Controls.Add(this.CancelarPedido);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.guna2Shapes5);
             this.guna2Panel1.Controls.Add(this.guna2Shapes4);
@@ -98,10 +109,205 @@
             this.guna2Panel1.Size = new System.Drawing.Size(847, 785);
             this.guna2Panel1.TabIndex = 2;
             // 
+            // panel_cantidadProductos
+            // 
+            this.panel_cantidadProductos.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel_cantidadProductos.Controls.Add(this.btn_cerrarCantidadProductos);
+            this.panel_cantidadProductos.Controls.Add(this.guna2Shapes11);
+            this.panel_cantidadProductos.Controls.Add(this.txt_cantidad);
+            this.panel_cantidadProductos.Controls.Add(this.guna2HtmlLabel4);
+            this.panel_cantidadProductos.Controls.Add(this.guna2HtmlLabel8);
+            this.panel_cantidadProductos.Controls.Add(this.txt_precio);
+            this.panel_cantidadProductos.Controls.Add(this.guna2HtmlLabel5);
+            this.panel_cantidadProductos.Controls.Add(this.btn_finalizarVenta);
+            this.panel_cantidadProductos.Controls.Add(this.txt_producto);
+            this.panel_cantidadProductos.Controls.Add(this.guna2HtmlLabel13);
+            this.panel_cantidadProductos.Location = new System.Drawing.Point(3, 4);
+            this.panel_cantidadProductos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel_cantidadProductos.Name = "panel_cantidadProductos";
+            this.panel_cantidadProductos.Size = new System.Drawing.Size(737, 620);
+            this.panel_cantidadProductos.TabIndex = 54;
+            this.panel_cantidadProductos.Visible = false;
+            // 
+            // btn_cerrarCantidadProductos
+            // 
+            this.btn_cerrarCantidadProductos.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cerrarCantidadProductos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
+            this.btn_cerrarCantidadProductos.BorderThickness = 2;
+            this.btn_cerrarCantidadProductos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarCantidadProductos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarCantidadProductos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cerrarCantidadProductos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cerrarCantidadProductos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
+            this.btn_cerrarCantidadProductos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_cerrarCantidadProductos.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrarCantidadProductos.Location = new System.Drawing.Point(691, 0);
+            this.btn_cerrarCantidadProductos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cerrarCantidadProductos.Name = "btn_cerrarCantidadProductos";
+            this.btn_cerrarCantidadProductos.Size = new System.Drawing.Size(46, 41);
+            this.btn_cerrarCantidadProductos.TabIndex = 55;
+            this.btn_cerrarCantidadProductos.Text = "X";
+            this.btn_cerrarCantidadProductos.UseTransparentBackground = true;
+            this.btn_cerrarCantidadProductos.Click += new System.EventHandler(this.btn_cerrarCantidadProductos_Click);
+            // 
+            // guna2Shapes11
+            // 
+            this.guna2Shapes11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes11.BorderColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes11.FillColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Shapes11.Location = new System.Drawing.Point(0, 0);
+            this.guna2Shapes11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Shapes11.Name = "guna2Shapes11";
+            this.guna2Shapes11.PolygonSkip = 1;
+            this.guna2Shapes11.Rotate = 0F;
+            this.guna2Shapes11.RoundedRadius = 30;
+            this.guna2Shapes11.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
+            this.guna2Shapes11.Size = new System.Drawing.Size(737, 41);
+            this.guna2Shapes11.TabIndex = 44;
+            this.guna2Shapes11.Text = "guna2Shapes11";
+            this.guna2Shapes11.UseTransparentBackground = true;
+            this.guna2Shapes11.Zoom = 100;
+            // 
+            // txt_cantidad
+            // 
+            this.txt_cantidad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_cantidad.DefaultText = "";
+            this.txt_cantidad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_cantidad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_cantidad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_cantidad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_cantidad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_cantidad.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_cantidad.ForeColor = System.Drawing.Color.Black;
+            this.txt_cantidad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_cantidad.Location = new System.Drawing.Point(65, 366);
+            this.txt_cantidad.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_cantidad.Name = "txt_cantidad";
+            this.txt_cantidad.PlaceholderText = "";
+            this.txt_cantidad.SelectedText = "";
+            this.txt_cantidad.Size = new System.Drawing.Size(284, 60);
+            this.txt_cantidad.TabIndex = 43;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.AutoSize = false;
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(65, 320);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(313, 48);
+            this.guna2HtmlLabel4.TabIndex = 42;
+            this.guna2HtmlLabel4.Text = "Cantidad";
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.AutoSize = false;
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(386, 185);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(313, 48);
+            this.guna2HtmlLabel8.TabIndex = 41;
+            this.guna2HtmlLabel8.Text = "Precio";
+            // 
+            // txt_precio
+            // 
+            this.txt_precio.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_precio.DefaultText = "";
+            this.txt_precio.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_precio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_precio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_precio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_precio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_precio.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_precio.ForeColor = System.Drawing.Color.Black;
+            this.txt_precio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_precio.Location = new System.Drawing.Point(386, 235);
+            this.txt_precio.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_precio.Name = "txt_precio";
+            this.txt_precio.PlaceholderText = "";
+            this.txt_precio.SelectedText = "";
+            this.txt_precio.Size = new System.Drawing.Size(284, 60);
+            this.txt_precio.TabIndex = 40;
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.AutoSize = false;
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(65, 179);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(313, 48);
+            this.guna2HtmlLabel5.TabIndex = 36;
+            this.guna2HtmlLabel5.Text = "Producto";
+            // 
+            // btn_finalizarVenta
+            // 
+            this.btn_finalizarVenta.BackColor = System.Drawing.Color.Transparent;
+            this.btn_finalizarVenta.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(43)))), ((int)(((byte)(0)))));
+            this.btn_finalizarVenta.BorderRadius = 20;
+            this.btn_finalizarVenta.BorderThickness = 2;
+            this.btn_finalizarVenta.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_finalizarVenta.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_finalizarVenta.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_finalizarVenta.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_finalizarVenta.FillColor = System.Drawing.Color.OliveDrab;
+            this.btn_finalizarVenta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_finalizarVenta.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_finalizarVenta.Location = new System.Drawing.Point(202, 490);
+            this.btn_finalizarVenta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_finalizarVenta.Name = "btn_finalizarVenta";
+            this.btn_finalizarVenta.Size = new System.Drawing.Size(335, 68);
+            this.btn_finalizarVenta.TabIndex = 34;
+            this.btn_finalizarVenta.Text = "Finalizar Venta";
+            this.btn_finalizarVenta.UseTransparentBackground = true;
+            this.btn_finalizarVenta.Click += new System.EventHandler(this.btn_finalizarVenta_Click);
+            // 
+            // txt_producto
+            // 
+            this.txt_producto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_producto.DefaultText = "";
+            this.txt_producto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_producto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_producto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_producto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_producto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_producto.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_producto.ForeColor = System.Drawing.Color.Black;
+            this.txt_producto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_producto.Location = new System.Drawing.Point(65, 235);
+            this.txt_producto.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_producto.Name = "txt_producto";
+            this.txt_producto.PlaceholderText = "";
+            this.txt_producto.SelectedText = "";
+            this.txt_producto.Size = new System.Drawing.Size(284, 60);
+            this.txt_producto.TabIndex = 30;
+            // 
+            // guna2HtmlLabel13
+            // 
+            this.guna2HtmlLabel13.AutoSize = false;
+            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(1)))));
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(3, 41);
+            this.guna2HtmlLabel13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
+            this.guna2HtmlLabel13.Size = new System.Drawing.Size(810, 284);
+            this.guna2HtmlLabel13.TabIndex = 27;
+            this.guna2HtmlLabel13.Text = "Cantidad Productos";
+            this.guna2HtmlLabel13.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // panel_crearPedido
             // 
             this.panel_crearPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
-            this.panel_crearPedido.Controls.Add(this.btn_cerrarR);
+            this.panel_crearPedido.Controls.Add(this.btn_cerrarCrearPedido);
             this.panel_crearPedido.Controls.Add(this.guna2Shapes7);
             this.panel_crearPedido.Controls.Add(this.listViewProductos);
             this.panel_crearPedido.Controls.Add(this.cmbSucursal);
@@ -110,37 +316,37 @@
             this.panel_crearPedido.Controls.Add(this.txtNombreCliente);
             this.panel_crearPedido.Controls.Add(this.guna2HtmlLabel7);
             this.panel_crearPedido.Controls.Add(this.guna2HtmlLabel6);
-            this.panel_crearPedido.Controls.Add(this.btnCrear);
             this.panel_crearPedido.Controls.Add(this.guna2Shapes2);
             this.panel_crearPedido.Controls.Add(this.guna2HtmlLabel2);
             this.panel_crearPedido.Controls.Add(this.guna2Shapes6);
             this.panel_crearPedido.Controls.Add(this.guna2PictureBox2);
-            this.panel_crearPedido.Location = new System.Drawing.Point(12, 11);
+            this.panel_crearPedido.Location = new System.Drawing.Point(746, 316);
             this.panel_crearPedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_crearPedido.Name = "panel_crearPedido";
             this.panel_crearPedido.Size = new System.Drawing.Size(642, 694);
             this.panel_crearPedido.TabIndex = 16;
             this.panel_crearPedido.Visible = false;
             // 
-            // btn_cerrarR
+            // btn_cerrarCrearPedido
             // 
-            this.btn_cerrarR.BackColor = System.Drawing.Color.Transparent;
-            this.btn_cerrarR.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
-            this.btn_cerrarR.BorderThickness = 2;
-            this.btn_cerrarR.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cerrarR.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cerrarR.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cerrarR.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_cerrarR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
-            this.btn_cerrarR.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_cerrarR.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrarR.Location = new System.Drawing.Point(596, 0);
-            this.btn_cerrarR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_cerrarR.Name = "btn_cerrarR";
-            this.btn_cerrarR.Size = new System.Drawing.Size(46, 41);
-            this.btn_cerrarR.TabIndex = 27;
-            this.btn_cerrarR.Text = "X";
-            this.btn_cerrarR.UseTransparentBackground = true;
+            this.btn_cerrarCrearPedido.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cerrarCrearPedido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
+            this.btn_cerrarCrearPedido.BorderThickness = 2;
+            this.btn_cerrarCrearPedido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarCrearPedido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarCrearPedido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cerrarCrearPedido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cerrarCrearPedido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
+            this.btn_cerrarCrearPedido.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_cerrarCrearPedido.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrarCrearPedido.Location = new System.Drawing.Point(596, 0);
+            this.btn_cerrarCrearPedido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cerrarCrearPedido.Name = "btn_cerrarCrearPedido";
+            this.btn_cerrarCrearPedido.Size = new System.Drawing.Size(46, 41);
+            this.btn_cerrarCrearPedido.TabIndex = 27;
+            this.btn_cerrarCrearPedido.Text = "X";
+            this.btn_cerrarCrearPedido.UseTransparentBackground = true;
+            this.btn_cerrarCrearPedido.Click += new System.EventHandler(this.btn_cerrarCrearPedido_Click);
             // 
             // guna2Shapes7
             // 
@@ -163,37 +369,30 @@
             // listViewProductos
             // 
             this.listViewProductos.BackColor = System.Drawing.Color.LemonChiffon;
-            this.listViewProductos.CheckBoxes = true;
             this.listViewProductos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Producto,
-            this.Estado,
-            this.Sucursal});
+            this.Precio});
             this.listViewProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewProductos.HideSelection = false;
             this.listViewProductos.Location = new System.Drawing.Point(99, 430);
             this.listViewProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listViewProductos.Name = "listViewProductos";
-            this.listViewProductos.Size = new System.Drawing.Size(440, 143);
+            this.listViewProductos.Size = new System.Drawing.Size(440, 219);
             this.listViewProductos.TabIndex = 26;
             this.listViewProductos.UseCompatibleStateImageBehavior = false;
             this.listViewProductos.View = System.Windows.Forms.View.Details;
+            this.listViewProductos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listViewProductos_MouseDoubleClick);
             // 
             // Producto
             // 
             this.Producto.Text = "Producto";
-            this.Producto.Width = 140;
+            this.Producto.Width = 200;
             // 
-            // Estado
+            // Precio
             // 
-            this.Estado.Text = "Estado";
-            this.Estado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Estado.Width = 140;
-            // 
-            // Sucursal
-            // 
-            this.Sucursal.Text = "Sucursal";
-            this.Sucursal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Sucursal.Width = 140;
+            this.Precio.Text = "Precio";
+            this.Precio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Precio.Width = 200;
             // 
             // cmbSucursal
             // 
@@ -288,25 +487,6 @@
             this.guna2HtmlLabel6.TabIndex = 18;
             this.guna2HtmlLabel6.Text = "Nombre Cliente";
             // 
-            // btnCrear
-            // 
-            this.btnCrear.BorderRadius = 10;
-            this.btnCrear.BorderThickness = 2;
-            this.btnCrear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCrear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCrear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCrear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCrear.FillColor = System.Drawing.Color.OliveDrab;
-            this.btnCrear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnCrear.ForeColor = System.Drawing.Color.Black;
-            this.btnCrear.Location = new System.Drawing.Point(192, 612);
-            this.btnCrear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(264, 61);
-            this.btnCrear.TabIndex = 15;
-            this.btnCrear.Text = "Crear";
-            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
-            // 
             // guna2Shapes2
             // 
             this.guna2Shapes2.BackColor = System.Drawing.Color.Transparent;
@@ -318,7 +498,7 @@
             this.guna2Shapes2.PolygonSkip = 1;
             this.guna2Shapes2.Rotate = 0F;
             this.guna2Shapes2.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
-            this.guna2Shapes2.Size = new System.Drawing.Size(598, 451);
+            this.guna2Shapes2.Size = new System.Drawing.Size(598, 530);
             this.guna2Shapes2.TabIndex = 8;
             this.guna2Shapes2.Text = "guna2Shapes2";
             this.guna2Shapes2.UseTransparentBackground = true;
@@ -367,44 +547,45 @@
             this.guna2PictureBox2.TabIndex = 0;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // guna2Panel4
+            // panel_CancelarPedido
             // 
-            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
-            this.guna2Panel4.Controls.Add(this.btn_cerrarcancelarpedido);
-            this.guna2Panel4.Controls.Add(this.guna2Shapes8);
-            this.guna2Panel4.Controls.Add(this.guna2Button6);
-            this.guna2Panel4.Controls.Add(this.guna2Button5);
-            this.guna2Panel4.Controls.Add(this.listView2);
-            this.guna2Panel4.Controls.Add(this.guna2Shapes1);
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel12);
-            this.guna2Panel4.Controls.Add(this.guna2Shapes3);
-            this.guna2Panel4.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel4.Location = new System.Drawing.Point(717, 89);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(642, 694);
-            this.guna2Panel4.TabIndex = 14;
-            this.guna2Panel4.Visible = false;
+            this.panel_CancelarPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(246)))), ((int)(((byte)(196)))));
+            this.panel_CancelarPedido.Controls.Add(this.btn_CancelarPedido);
+            this.panel_CancelarPedido.Controls.Add(this.guna2Shapes8);
+            this.panel_CancelarPedido.Controls.Add(this.guna2Button6);
+            this.panel_CancelarPedido.Controls.Add(this.guna2Button5);
+            this.panel_CancelarPedido.Controls.Add(this.listView2);
+            this.panel_CancelarPedido.Controls.Add(this.guna2Shapes1);
+            this.panel_CancelarPedido.Controls.Add(this.guna2HtmlLabel12);
+            this.panel_CancelarPedido.Controls.Add(this.guna2Shapes3);
+            this.panel_CancelarPedido.Controls.Add(this.guna2PictureBox4);
+            this.panel_CancelarPedido.Location = new System.Drawing.Point(795, 4);
+            this.panel_CancelarPedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel_CancelarPedido.Name = "panel_CancelarPedido";
+            this.panel_CancelarPedido.Size = new System.Drawing.Size(642, 694);
+            this.panel_CancelarPedido.TabIndex = 14;
+            this.panel_CancelarPedido.Visible = false;
             // 
-            // btn_cerrarcancelarpedido
+            // btn_CancelarPedido
             // 
-            this.btn_cerrarcancelarpedido.BackColor = System.Drawing.Color.Transparent;
-            this.btn_cerrarcancelarpedido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
-            this.btn_cerrarcancelarpedido.BorderThickness = 2;
-            this.btn_cerrarcancelarpedido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cerrarcancelarpedido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_cerrarcancelarpedido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_cerrarcancelarpedido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_cerrarcancelarpedido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
-            this.btn_cerrarcancelarpedido.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_cerrarcancelarpedido.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrarcancelarpedido.Location = new System.Drawing.Point(595, 1);
-            this.btn_cerrarcancelarpedido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_cerrarcancelarpedido.Name = "btn_cerrarcancelarpedido";
-            this.btn_cerrarcancelarpedido.Size = new System.Drawing.Size(46, 41);
-            this.btn_cerrarcancelarpedido.TabIndex = 29;
-            this.btn_cerrarcancelarpedido.Text = "X";
-            this.btn_cerrarcancelarpedido.UseTransparentBackground = true;
+            this.btn_CancelarPedido.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CancelarPedido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(40)))), ((int)(((byte)(24)))));
+            this.btn_CancelarPedido.BorderThickness = 2;
+            this.btn_CancelarPedido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_CancelarPedido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_CancelarPedido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_CancelarPedido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_CancelarPedido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(111)))), ((int)(((byte)(3)))));
+            this.btn_CancelarPedido.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btn_CancelarPedido.ForeColor = System.Drawing.Color.White;
+            this.btn_CancelarPedido.Location = new System.Drawing.Point(595, 1);
+            this.btn_CancelarPedido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_CancelarPedido.Name = "btn_CancelarPedido";
+            this.btn_CancelarPedido.Size = new System.Drawing.Size(46, 41);
+            this.btn_CancelarPedido.TabIndex = 29;
+            this.btn_CancelarPedido.Text = "X";
+            this.btn_CancelarPedido.UseTransparentBackground = true;
+            this.btn_CancelarPedido.Click += new System.EventHandler(this.btn_CancelarPedido_Click);
             // 
             // guna2Shapes8
             // 
@@ -553,24 +734,24 @@
             this.guna2PictureBox4.TabIndex = 0;
             this.guna2PictureBox4.TabStop = false;
             // 
-            // guna2Button7
+            // btn_cerrarFormCliente
             // 
-            this.guna2Button7.BorderRadius = 10;
-            this.guna2Button7.BorderThickness = 2;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.OrangeRed;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button7.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button7.Location = new System.Drawing.Point(318, 624);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(186, 61);
-            this.guna2Button7.TabIndex = 13;
-            this.guna2Button7.Text = "Cerrar";
-            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
+            this.btn_cerrarFormCliente.BorderRadius = 10;
+            this.btn_cerrarFormCliente.BorderThickness = 2;
+            this.btn_cerrarFormCliente.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarFormCliente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cerrarFormCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cerrarFormCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cerrarFormCliente.FillColor = System.Drawing.Color.OrangeRed;
+            this.btn_cerrarFormCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btn_cerrarFormCliente.ForeColor = System.Drawing.Color.Black;
+            this.btn_cerrarFormCliente.Location = new System.Drawing.Point(318, 624);
+            this.btn_cerrarFormCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cerrarFormCliente.Name = "btn_cerrarFormCliente";
+            this.btn_cerrarFormCliente.Size = new System.Drawing.Size(186, 61);
+            this.btn_cerrarFormCliente.TabIndex = 13;
+            this.btn_cerrarFormCliente.Text = "Cerrar";
+            this.btn_cerrarFormCliente.Click += new System.EventHandler(this.btn_cerrarFormCliente_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -598,45 +779,45 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // guna2Button2
+            // CrearPedido
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Location = new System.Drawing.Point(254, 316);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(317, 92);
-            this.guna2Button2.TabIndex = 6;
-            this.guna2Button2.Text = "Crear pedido";
-            this.guna2Button2.UseTransparentBackground = true;
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.CrearPedido.BackColor = System.Drawing.Color.Transparent;
+            this.CrearPedido.BorderRadius = 20;
+            this.CrearPedido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.CrearPedido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.CrearPedido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CrearPedido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.CrearPedido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.CrearPedido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.CrearPedido.ForeColor = System.Drawing.Color.Black;
+            this.CrearPedido.Location = new System.Drawing.Point(254, 316);
+            this.CrearPedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CrearPedido.Name = "CrearPedido";
+            this.CrearPedido.Size = new System.Drawing.Size(317, 92);
+            this.CrearPedido.TabIndex = 6;
+            this.CrearPedido.Text = "Crear pedido";
+            this.CrearPedido.UseTransparentBackground = true;
+            this.CrearPedido.Click += new System.EventHandler(this.CrearPedido_Click);
             // 
-            // guna2Button1
+            // CancelarPedido
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.OliveDrab;
-            this.guna2Button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(254, 472);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(317, 92);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "Cancelar pedido";
-            this.guna2Button1.UseTransparentBackground = true;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.CancelarPedido.BackColor = System.Drawing.Color.Transparent;
+            this.CancelarPedido.BorderRadius = 20;
+            this.CancelarPedido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.CancelarPedido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.CancelarPedido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CancelarPedido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.CancelarPedido.FillColor = System.Drawing.Color.OliveDrab;
+            this.CancelarPedido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.CancelarPedido.ForeColor = System.Drawing.Color.Black;
+            this.CancelarPedido.Location = new System.Drawing.Point(254, 472);
+            this.CancelarPedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CancelarPedido.Name = "CancelarPedido";
+            this.CancelarPedido.Size = new System.Drawing.Size(317, 92);
+            this.CancelarPedido.TabIndex = 4;
+            this.CancelarPedido.Text = "Cancelar pedido";
+            this.CancelarPedido.UseTransparentBackground = true;
+            this.CancelarPedido.Click += new System.EventHandler(this.CancelarPedido_Click);
             // 
             // label2
             // 
@@ -694,12 +875,14 @@
             this.Name = "FormCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCliente";
+            this.Load += new System.EventHandler(this.FormCliente_Load_1);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.panel_cantidadProductos.ResumeLayout(false);
             this.panel_crearPedido.ResumeLayout(false);
             this.panel_crearPedido.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            this.guna2Panel4.ResumeLayout(false);
+            this.panel_CancelarPedido.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -709,7 +892,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Panel panel_CancelarPedido;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private System.Windows.Forms.ListView listView2;
@@ -720,11 +903,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2Button btn_cerrarFormCliente;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button CrearPedido;
+        private Guna.UI2.WinForms.Guna2Button CancelarPedido;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes5;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes4;
@@ -733,7 +916,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtNombreCliente;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2Button btnCrear;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes6;
@@ -742,11 +924,21 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private System.Windows.Forms.ListView listViewProductos;
         private System.Windows.Forms.ColumnHeader Producto;
-        private System.Windows.Forms.ColumnHeader Estado;
-        private System.Windows.Forms.ColumnHeader Sucursal;
-        private Guna.UI2.WinForms.Guna2Button btn_cerrarR;
+        private System.Windows.Forms.ColumnHeader Precio;
+        private Guna.UI2.WinForms.Guna2Button btn_cerrarCrearPedido;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes7;
-        private Guna.UI2.WinForms.Guna2Button btn_cerrarcancelarpedido;
+        private Guna.UI2.WinForms.Guna2Button btn_CancelarPedido;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes8;
+        private Guna.UI2.WinForms.Guna2Panel panel_cantidadProductos;
+        private Guna.UI2.WinForms.Guna2Button btn_cerrarCantidadProductos;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes11;
+        private Guna.UI2.WinForms.Guna2TextBox txt_cantidad;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2TextBox txt_precio;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2Button btn_finalizarVenta;
+        private Guna.UI2.WinForms.Guna2TextBox txt_producto;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
     }
 }

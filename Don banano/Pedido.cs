@@ -8,7 +8,7 @@ namespace Don_banano
 {
     public class Pedido
     {
-        public int Orden { get; set; }
+        public string Orden { get; set; }
         public string Cliente { get; set; }
         public string Direccion { get; set; }
         public string Productos { get; set; }
@@ -17,7 +17,7 @@ namespace Don_banano
         public List<Producto> Producto { get; set; } = new List<Producto>();
 
 
-        public Pedido(int orden, string cliente, string direccion, string productos, string sucursal)
+        public Pedido(string orden, string cliente, string direccion, string productos, string sucursal)
         {
             Orden = orden;
             Cliente = cliente;
@@ -27,7 +27,7 @@ namespace Don_banano
             HoraCreacion = DateTime.Now;
         }
 
-        public Pedido()
+        public Pedido(int numeroOrden)
         {
         }
     }

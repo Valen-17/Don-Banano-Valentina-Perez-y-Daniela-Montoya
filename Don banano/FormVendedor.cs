@@ -12,19 +12,15 @@ namespace Don_banano
 {
     public partial class FormVendedor : Form
     {
-        private FormRepartidor _formRepartidor;
-        private List<Pedido> pedidosCreados = new List<Pedido>();
-        private Queue<Pedido> colaPedidos = new Queue<Pedido>();
-
-        public FormVendedor(FormRepartidor repartidor)
+        public FormVendedor()
         {
             InitializeComponent();
-            _formRepartidor = repartidor;
         }
 
         private void FormVendedor_Load(object sender, EventArgs e)
         {
             CargarVistaInventario();
+            CargarSucursales();
         }
 
         private void CargarSucursales()
@@ -52,11 +48,6 @@ namespace Don_banano
             }
         }
 
-        private void guna2Button9_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void cmbSucursal_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             string sucursalSeleccionada = cmbSucursal.SelectedItem.ToString();
@@ -73,25 +64,6 @@ namespace Don_banano
                     listView_vendedor_pedidos.Items.Add(item);
                 }
             }
-        }
-        private Pedido CrearPedido()
-        {
-            Random rnd = new Random();
-            int numeroOrden = rnd.Next(1000, 9999);
-
-            string productos = string.Join(", ",
-                listView_vendedor_pedidos.CheckedItems
-                    .Cast<ListViewItem>()
-                    .Select(item => item.Text)
-                    .ToArray());
-
-            return new Pedido(
-                numeroOrden,
-                txtNombreCliente.Text,
-                txtDireccion.Text,
-                productos,
-                cmbSucursal.Text
-            );
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -129,6 +101,49 @@ namespace Don_banano
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+        }
+
+        private void btn_finalizarVenta_Click(object sender, EventArgs e)
+        {
+            if (listView_vendedor_pedidos.SelectedItems.Count > 0 && cmbSucursal.SelectedItem != null)
+            {
+                string numeroOrden = Guid.NewGuid().ToString().Substring(0, 8);
+                string cliente = txtNombreCliente.Text;
+                string direccion = txtDireccion.Text;
+                string producto = listView_vendedor_pedidos.SelectedItems[0].Text;
+                string sucursal = cmbSucursal.SelectedItem.ToString();
+                string hora = DateTime.Now.ToString("g");
+
+                string resumen = $"Número de Orden: {numeroOrden}\n" +
+                                 $"Cliente: {cliente}\n" +
+                                 $"Dirección: {direccion}\n" +
+                                 $"Sucursal: {sucursal}\n" +
+                                 $"Producto: {producto}\n" +
+                                 $"Hora: {hora}";
+
+                MessageBox.Show(resumen, "Resumen de tu compra", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Por favor selecciona un producto y una sucursal");
+            }
+        }
+
+        private void listView_vendedor_pedidos_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (listView_vendedor_pedidos.SelectedItems.Count > 0)
+            {
+                var item = listView_vendedor_pedidos.SelectedItems[0];
+                var producto = (Producto)item.Tag;
+
+                txt_producto.Text = producto.Nombre;
+                txt_precio.Text = producto.Precio.ToString("N2");
+                txt_cantidad.Text = "";
+                panel_cantidadProductos.Visible = true;
+
+                panel_crearpedido.Visible = false;
+                panel_crearpedido.SendToBack();
+            }
         }
     }
 }

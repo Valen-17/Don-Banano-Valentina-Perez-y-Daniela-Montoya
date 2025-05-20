@@ -83,12 +83,6 @@
     <Compile Include="FormCliente.Designer.cs">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRepartidor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRepartidor.Designer.cs">
-      <DependentUpon>FormRepartidor.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,9 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormRepartidor.resx">
-      <DependentUpon>FormRepartidor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVendedor.resx">
       <DependentUpon>FormVendedor.cs</DependentUpon>

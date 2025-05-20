@@ -183,7 +183,7 @@
             this.panel_vender2.Controls.Add(this.btn_finalizarVenta);
             this.panel_vender2.Controls.Add(this.txt_producto);
             this.panel_vender2.Controls.Add(this.guna2HtmlLabel13);
-            this.panel_vender2.Location = new System.Drawing.Point(752, 15);
+            this.panel_vender2.Location = new System.Drawing.Point(680, 180);
             this.panel_vender2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel_vender2.Name = "panel_vender2";
             this.panel_vender2.Size = new System.Drawing.Size(737, 620);
@@ -401,7 +401,7 @@
             this.panel_vender.Controls.Add(this.guna2Shapes4);
             this.panel_vender.Controls.Add(this.guna2Shapes5);
             this.panel_vender.Controls.Add(this.label1);
-            this.panel_vender.Location = new System.Drawing.Point(795, 28);
+            this.panel_vender.Location = new System.Drawing.Point(776, 19);
             this.panel_vender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel_vender.Name = "panel_vender";
             this.panel_vender.Size = new System.Drawing.Size(820, 755);

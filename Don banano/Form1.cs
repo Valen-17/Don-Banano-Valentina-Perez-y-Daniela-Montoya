@@ -154,21 +154,14 @@ namespace Don_banano
             }
 
             Usuarios usuarioEncontrado = UsuariosDB.ListaUsuarios.Find(u => u.Usuario == usuario && u.Contraseña == contraseña);
-            FormRepartidor formRepartidor1 = new FormRepartidor();
-            FormVendedor formVendedor1 = new FormVendedor(formRepartidor1);
 
             if (usuarioEncontrado != null)
             {
                 switch (usuarioEncontrado.Rol)
                 {
                     case "Cliente":
-                        FormCliente formCliente = new FormCliente(formRepartidor1);
+                        FormCliente formCliente = new FormCliente();
                         formCliente.Show();
-                        this.Hide();
-                        break;
-                    case "Repartidor":
-                        FormRepartidor formRepartidor = new FormRepartidor();
-                        formRepartidor.Show();
                         this.Hide();
                         break;
                     case "Admin":
@@ -178,7 +171,7 @@ namespace Don_banano
                         break;
                     case "vendedor": 
                         MessageBox.Show("Bienvenido vendedor: " + usuarioEncontrado.Usuario);
-                        FormVendedor formVendedor = new FormVendedor(formRepartidor1);
+                        FormVendedor formVendedor = new FormVendedor();
                         formVendedor.Show();
                         this.Hide();
                         break;
