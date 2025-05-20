@@ -21,11 +21,11 @@ namespace Don_banano
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             Facturar.ProductosVendidos.Clear();
-            panel1_repartidor.Visible = true;
-            panel1_repartidor.BringToFront();
-            int x = (this.ClientSize.Width - panel1_repartidor.Width) / 2;
-            int y = (this.ClientSize.Height - panel1_repartidor.Height) / 2;
-            panel1_repartidor.Location = new Point(x, y);
+            panel2_completadas.Visible = true;
+            panel2_completadas.BringToFront();
+            int x = (this.ClientSize.Width - panel2_completadas.Width) / 2;
+            int y = (this.ClientSize.Height - panel2_completadas.Height) / 2;
+            panel2_completadas.Location = new Point(x, y);
         }
 
         private void guna2Button11_Click(object sender, EventArgs e)
@@ -37,11 +37,11 @@ namespace Don_banano
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             Facturar.ProductosVendidos.Clear();
-            panel2_completadas.Visible = true;
-            panel2_completadas.BringToFront();
-            int x = (this.ClientSize.Width - panel2_completadas.Width) / 2;
-            int y = (this.ClientSize.Height - panel2_completadas.Height) / 2;
-            panel2_completadas.Location = new Point(x, y);
+            panel1_repartidor.Visible = true;
+            panel1_repartidor.BringToFront();
+            int x = (this.ClientSize.Width - panel1_repartidor.Width) / 2;
+            int y = (this.ClientSize.Height - panel1_repartidor.Height) / 2;
+            panel1_repartidor.Location = new Point(x, y);
         }
 
         private void guna2Button10_Click(object sender, EventArgs e)
